@@ -22,12 +22,12 @@ Scan 2 done
 Scan 5 done
 Scan 6 done
 Scan 7 done
-Sigscan elapsed: 370 ms.
-SFE runtime: initialize (version = 0.0.111 010A0780 01DC869B1BA61E95, os = 6.2 (9200))
-imagebase = 00007FF679A50000
-reloc mgr imagebase = 00007FF679A50000
+Sigscan elapsed: 347 ms.
+SFE runtime: initialize (version = 0.0.111 010A0780 01DC86CC88232E80, os = 6.2 (9200))
+imagebase = 00007FF744BD0000
+reloc mgr imagebase = 00007FF744BD0000
 init complete
-1328872306198012990
+1329191590610609025
 1
 2
 6
