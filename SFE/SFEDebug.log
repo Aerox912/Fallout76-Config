@@ -55,7 +55,6 @@ Client is null. Returning write failure. 2
 Client is null. Returning write failure. 2
 Client is null. Returning write failure. 2
 Client is null. Returning write failure. 2
-Client is null. Returning write failure. 2
 register received
 key check registered
 connect received
@@ -70,34 +69,3 @@ got worlddata
 sending auth
 scaleform 1
 scaleform 2
-scaleform 1
-scaleform 2
-scaleform 1
-scaleform 2
-scaleform 1
-scaleform 2
-scaleform 1
-scaleform 2
-scaleform 1
-scaleform 2
-scaleform 1
-scaleform 2
-scaleform 1
-scaleform 2
-Set code object, 2nd call
-scaleform 1
-scaleform 2
-Set code object, 2nd call
-scaleform 1
-scaleform 2
-Set code object, 1st call
-scaleform 1
-scaleform 2
-Set code object, 2nd call
-scaleform 1
-scaleform 2
-scaleform 1
-scaleform 2
-scaleform 1
-scaleform 2
-Set code object, 2nd call

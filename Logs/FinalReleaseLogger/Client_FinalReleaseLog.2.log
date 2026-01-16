@@ -1,40 +1,40 @@
-[01/16/2026 - 03:44:43] BDK Initialized: Environment: Production, Version: 2.12.1.002 [Live] 
-[01/16/2026 - 03:46:31] load.platform.config: force_ini=0, env=prodpc01
-[01/16/2026 - 03:46:32] load.json: gateway=https://us-east-2-prod-prodpc01-glb-bps-gateway.p76prod.systems, bigateway=https://us-east-2-prod-prodpc01-glb-bps-bigateway.p76prod.systems, pushy=https://us-east-2-prod-prodpc01-glb-bps-pushy.p76prod.systems, regions=0
-[01/16/2026 - 03:46:32] ping.response: url=http://eu-central-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, ping_url=http://eu-central-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, status_code=200, error_code=0, error_msg=
-[01/16/2026 - 03:46:32] ping.response: url=http://eu-west-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, ping_url=http://eu-west-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, status_code=200, error_code=0, error_msg=
-[01/16/2026 - 03:46:32] ping.response: url=http://us-east-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, ping_url=http://us-east-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, status_code=200, error_code=0, error_msg=
-[01/16/2026 - 03:46:32] ping.response: success=true
-[01/16/2026 - 03:46:32] ping.found: lowest-ping-ms=16, region=2, gs-region=6
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=6, ping-ms=31
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=6, ping-ms=32
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=6, ping-ms=31
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=6, ping-ms=16
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=6, ping-ms=31
-[01/16/2026 - 03:46:32] ping.response: success=true
-[01/16/2026 - 03:46:32] ping.found: lowest-ping-ms=31, region=2, gs-region=7
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=7, ping-ms=47
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=7, ping-ms=31
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=7, ping-ms=32
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=7, ping-ms=31
-[01/16/2026 - 03:46:32] ping.sample: region=2, gs-region=7, ping-ms=47
-[01/16/2026 - 03:46:32] ping.response: url=http://ap-southeast-2-prod-prodpc01-reg-httpping.p76prod.systems/ping, ping_url=http://ap-southeast-2-prod-prodpc01-reg-httpping.p76prod.systems/ping, status_code=200, error_code=0, error_msg=
-[01/16/2026 - 03:46:33] ping.response: success=true
-[01/16/2026 - 03:46:33] ping.found: lowest-ping-ms=109, region=2, gs-region=2
-[01/16/2026 - 03:46:33] ping.sample: region=2, gs-region=2, ping-ms=109
-[01/16/2026 - 03:46:33] ping.sample: region=2, gs-region=2, ping-ms=141
-[01/16/2026 - 03:46:33] ping.sample: region=2, gs-region=2, ping-ms=109
-[01/16/2026 - 03:46:33] ping.sample: region=2, gs-region=2, ping-ms=109
-[01/16/2026 - 03:46:33] ping.sample: region=2, gs-region=2, ping-ms=110
-[01/16/2026 - 03:46:34] ping.response: success=true
-[01/16/2026 - 03:46:34] ping.found: lowest-ping-ms=296, region=2, gs-region=11
-[01/16/2026 - 03:46:34] ping.sample: region=2, gs-region=11, ping-ms=297
-[01/16/2026 - 03:46:34] ping.sample: region=2, gs-region=11, ping-ms=297
-[01/16/2026 - 03:46:34] ping.sample: region=2, gs-region=11, ping-ms=297
-[01/16/2026 - 03:46:34] ping.sample: region=2, gs-region=11, ping-ms=297
-[01/16/2026 - 03:46:34] ping.sample: region=2, gs-region=11, ping-ms=296
-[01/16/2026 - 03:46:34] get.lowest.ping.region: region=2, on-cooldown=false, ping-ms=16
-[01/16/2026 - 03:46:34] all.pings.complete: found=true, region=2, lowest-ping-ms=16
-[01/16/2026 - 03:46:37] get.lowest.ping.region: region=2, on-cooldown=false, ping-ms=16
-[01/16/2026 - 03:46:38] get.lowest.ping.region: region=2, on-cooldown=false, ping-ms=16
-[01/16/2026 - 03:46:41] get.lowest.ping.region: region=2, on-cooldown=false, ping-ms=16
+[01/16/2026 - 04:21:24] BDK Initialized: Environment: Production, Version: 2.12.1.002 [Live] 
+[01/16/2026 - 04:21:37] load.platform.config: force_ini=0, env=prodpc01
+[01/16/2026 - 04:21:37] load.json: gateway=https://us-east-2-prod-prodpc01-glb-bps-gateway.p76prod.systems, bigateway=https://us-east-2-prod-prodpc01-glb-bps-bigateway.p76prod.systems, pushy=https://us-east-2-prod-prodpc01-glb-bps-pushy.p76prod.systems, regions=0
+[01/16/2026 - 04:21:37] ping.response: url=http://eu-central-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, ping_url=http://eu-central-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, status_code=200, error_code=0, error_msg=
+[01/16/2026 - 04:21:37] ping.response: url=http://eu-west-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, ping_url=http://eu-west-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, status_code=200, error_code=0, error_msg=
+[01/16/2026 - 04:21:37] ping.response: success=true
+[01/16/2026 - 04:21:37] ping.found: lowest-ping-ms=15, region=2, gs-region=6
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=6, ping-ms=31
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=6, ping-ms=15
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=6, ping-ms=32
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=6, ping-ms=31
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=6, ping-ms=16
+[01/16/2026 - 04:21:37] ping.response: url=http://us-east-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, ping_url=http://us-east-1-prod-prodpc01-reg-httpping.p76prod.systems/ping, status_code=200, error_code=0, error_msg=
+[01/16/2026 - 04:21:37] ping.response: success=true
+[01/16/2026 - 04:21:37] ping.found: lowest-ping-ms=31, region=2, gs-region=7
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=7, ping-ms=31
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=7, ping-ms=32
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=7, ping-ms=47
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=7, ping-ms=31
+[01/16/2026 - 04:21:37] ping.sample: region=2, gs-region=7, ping-ms=31
+[01/16/2026 - 04:21:38] ping.response: url=http://ap-southeast-2-prod-prodpc01-reg-httpping.p76prod.systems/ping, ping_url=http://ap-southeast-2-prod-prodpc01-reg-httpping.p76prod.systems/ping, status_code=200, error_code=0, error_msg=
+[01/16/2026 - 04:21:38] ping.response: success=true
+[01/16/2026 - 04:21:38] ping.found: lowest-ping-ms=94, region=2, gs-region=2
+[01/16/2026 - 04:21:38] ping.sample: region=2, gs-region=2, ping-ms=94
+[01/16/2026 - 04:21:38] ping.sample: region=2, gs-region=2, ping-ms=110
+[01/16/2026 - 04:21:38] ping.sample: region=2, gs-region=2, ping-ms=109
+[01/16/2026 - 04:21:38] ping.sample: region=2, gs-region=2, ping-ms=109
+[01/16/2026 - 04:21:38] ping.sample: region=2, gs-region=2, ping-ms=110
+[01/16/2026 - 04:21:39] ping.response: success=true
+[01/16/2026 - 04:21:39] ping.found: lowest-ping-ms=312, region=2, gs-region=11
+[01/16/2026 - 04:21:39] ping.sample: region=2, gs-region=11, ping-ms=312
+[01/16/2026 - 04:21:39] ping.sample: region=2, gs-region=11, ping-ms=313
+[01/16/2026 - 04:21:39] ping.sample: region=2, gs-region=11, ping-ms=343
+[01/16/2026 - 04:21:39] ping.sample: region=2, gs-region=11, ping-ms=313
+[01/16/2026 - 04:21:39] ping.sample: region=2, gs-region=11, ping-ms=344
+[01/16/2026 - 04:21:39] get.lowest.ping.region: region=2, on-cooldown=false, ping-ms=15
+[01/16/2026 - 04:21:39] all.pings.complete: found=true, region=2, lowest-ping-ms=15
+[01/16/2026 - 04:21:42] get.lowest.ping.region: region=2, on-cooldown=false, ping-ms=15
+[01/16/2026 - 04:21:43] get.lowest.ping.region: region=2, on-cooldown=false, ping-ms=15
+[01/16/2026 - 04:21:47] get.lowest.ping.region: region=2, on-cooldown=false, ping-ms=15
