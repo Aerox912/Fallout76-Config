@@ -75,7 +75,8 @@ After every response, speak the reply aloud using the MODUS TTS script:
 
 ### Last-entry rules (strictly enforced):
 - `HUDModLoader.ba2` is always the **last entry in the HUD section**. If `ChatMod.ba2` is present, it goes after `HUDModLoader.ba2` as the last entry of the HUD section instead.
-- When adding new mods to `sResourceArchive2List`, always insert them **before** `ChatMod.ba2` if present, otherwise before the cosmetic section at the end.
+- When adding **HUD mods** (section 1), always insert them **before** `HUDModLoader.ba2` (or before `ChatMod.ba2` if present).
+- When adding **non-HUD mods** (sections 2–7), insert them in their appropriate section regardless of `ChatMod.ba2` — the ChatMod rule only governs the HUD section.
 
 ### sResourceArchive2List section order (follow this when placing new mods):
 1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `CAMPSearch.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `EasyHacking.ba2`, `QuickBoyX1.0SC.ba2`, `PAFriendlyUI.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `HUDModLoader.ba2` *(or `ChatMod.ba2` if present)*
