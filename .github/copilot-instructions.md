@@ -48,7 +48,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 8. **Props / mirrors / lighting fixes** — `Props.ba2`, `Better Mirrors.ba2`, `windoor.ba2`, `Diranars_PALight_Up.ba2`, `AFR.ba2`
 9. **Armor / clothing** — `2xArmorClothing.ba2`, `HDFixedBeret.ba2`, `Nuka_M/T.ba2`, `2xPowerArmor.ba2`, `PA_Bundle.ba2`, `ReconPA.ba2`
 10. **Weapons** — `2xWeapons.ba2`, `AA_M/T.ba2`
-11. **World quality-of-life overhauls** — `Gloomy AIO.ba2`, `4x Workstations.ba2`, `Fireplaces.ba2`, `WaterSD.ba2`, `SeventySixMod - JetpackDisabler.ba2`
+11. **World quality-of-life overhauls** — `Gloomy AIO.ba2`, `4x Workstations.ba2`, `Widening the ground to prevent settlement.ba2`, `Fireplaces.ba2`, `WaterSD.ba2`, `SeventySixMod - JetpackDisabler.ba2`
 12. **Player body / environment cosmetics** — `Heartbags.ba2`, `PoA_Lights.ba2`, `bustv.ba2`, `SIA.ba2`, `EF_M/T.ba2`, `plant_glow.ba2`, `FLORANIM.ba2`, `PrickeyeGlow.ba2`, `BrainsBGone.ba2`
 13. **NPC / creature body retextures** — `ACAB76_hottub.ba2`, `EVB76.ba2`, `Ghoul Textures.ba2`, `LUnd.ba2`, `MaleUnderwear.ba2`
 14. **Player outfit cosmetics** — `SF_RetroPP.ba2`, `ACAB76_corpses.ba2`, `EyesOfAppalachia.ba2`
@@ -65,7 +65,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 25. **Marker / ESP mods** — `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP.ba2`, `ACEE.ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `BM_Red.ba2`, `ESP_NC_AiO.ba2`
 26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `legendarybeam.ba2`, `Guardian is not based.ba2`, `SHRBMute.ba2`
 27. **Voiceline / audio removers** — `REVL_2.ba2`, `REVL_3.ba2`, `REVL_4.ba2`
-28. **Event / camp / map tweaks** — `BlackCamp.ba2`, `NoSiloElevatorHatch.ba2`, `RaidFuelESP.ba2`, `DoorsBGoneV14.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`
+28. **Event / camp / map tweaks** — `BlackCamp.ba2`, `NoSiloElevatorHatch.ba2`, `RaidFuelESP.ba2`, `DoorsBGoneV14.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
 29. *(Last)* `Cr_Mrk_AiO.ba2`
 
 ---
@@ -81,8 +81,8 @@ After every response, speak the reply aloud using the MODUS TTS script:
 ### sResourceArchive2List section order (follow this when placing new mods):
 1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `CAMPSearch.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `EasyHacking.ba2`, `QuickBoyX1.0SC.ba2`, `PAFriendlyUI.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `HUDModLoader.ba2` *(or `ChatMod.ba2` if present)*
 2. **QoL / gameplay UI** — `SkipMessagesConfigurable.ba2`, `ImprovedWorkbench.ba2`, `SimpleDPS.ba2`
-3. **Audio** — `76UltimateAudioOverhaul - v3.ba2`, `QuickDraw76.ba2`, `AppalachiaWarfare - Weapons/Bullets/Explosions.ba2`, `IRGSO.ba2`, `GaussWeaponFullChargeSound.BA2`, `SilentExplosiveBullets.ba2`, `DM Alternate Cannibal Sounds.ba2`, `Grelok - YouShallNotPass_EN.ba2`, `YEET throwing.ba2`, `BetterCollectibleFinderSounds.BA2`, `Emote sound replacer1.3.ba2`, `MOD_BetterExplosions.ba2`, `Lockpick_Laugh_track_mod.ba2`
-4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `PA-HoloHUD.ba2`, `NoSpinup.ba2`, `InstantReloads.ba2`, `InstantPowerArmor.ba2`, `instantbowcharge.ba2`, `FastPlasmaCaster.ba2`, `Legendary FFR.ba2`, `999Gatling.ba2`, `DragonFFR.ba2`, `FFRSingle.ba2`, `GatlingGunFireRate.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `MoreLoot.ba2`, `PPHmix_KF1.ba2`
+3. **Audio** — `76UltimateAudioOverhaul - v3.ba2`, `QuickDraw76.ba2`, `AppalachiaWarfare - Weapons/Bullets/Explosions.ba2`, `IRGSO.ba2`, `GaussWeaponFullChargeSound.BA2`, `SilentExplosiveBullets.ba2`, `DM Alternate Cannibal Sounds.ba2`, `Grelok - YouShallNotPass_EN.ba2`, `YEET throwing.ba2`, `BetterCollectibleFinderSounds.BA2`, `Emote sound replacer1.3.ba2`, `MOD_BetterExplosions.ba2`
+4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `PA-HoloHUD.ba2`, `NoSpinup.ba2`, `FastReloader.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `instantbowcharge.ba2`, `FastPlasmaCaster.ba2`, `Legendary FFR.ba2`, `999Gatling.ba2`, `DragonFFR.ba2`, `FFRSingle.ba2`, `GatlingGunFireRate.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `MoreLoot.ba2`, `PPHmix_KF1.ba2`
 5. **Weapon cosmetics** — `MWR Handmade Rifle Replacer.ba2`, `T60new_M/T.ba2`, `EVB_UA.ba2`, `EVB_UAM.ba2`, `TF2 Pulse Blade.ba2`
-6. **Gameplay misc** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `FPSBoost.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `krab cap.ba2`, `VatsChance.ba2`, `EarleNoWalls.ba2`, `Instant3rdPersonStim.ba2`, `DisableSmallSwitchDoors.ba2`
+6. **Gameplay misc** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `FPSBoost.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `LandWithYourKnees.ba2`, `Instant3rdPersonStim.ba2`
 7. **Cosmetics / outfits / hair** — `VTspa.ba2`, `CNV_PT.ba2`, `SF_DSUNI.ba2`, `fhair_391.ba2`, `nmixx_hair.ba2`, `SF_CPony.ba2`, `SF_scbe.ba2`, `VCHA.ba2`
