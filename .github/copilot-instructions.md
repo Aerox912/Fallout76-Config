@@ -33,6 +33,12 @@ After every response, speak the reply aloud using the MODUS TTS script:
 
 
 
+## Tools and Utilities
+### BA2 Archive Extractor
+- **BSArch**: `C:\Users\herks\Documents\BSArch\BSArch.exe`
+- Used for extracting and analyzing Bethesda BA2 archive files
+- Can examine mod contents, configurations, and game data records
+
 ## sResourceIndexFileList ordering rules
 - `Cr_Mrk_AiO.ba2` must always be the **last entry** in `sResourceIndexFileList`.
 - When adding new mods to `sResourceIndexFileList`, insert them before `Cr_Mrk_AiO.ba2`.
