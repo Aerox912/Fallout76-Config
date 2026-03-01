@@ -63,7 +63,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 23. **Bobbers** — `bobber_M/T/G.ba2`, `Glowing CSP Bobbers.ba2`, `Lightbulb_Bobber.ba2`
 24. **Glow mods** — `Glow.ba2`, `GlowMapFragments.ba2`, `GlowingGlowingBobbleheads.ba2`, `BobbleheadStand.ba2`, `GlowingKeys.ba2`, `Mainframe_Cores_Glow.ba2`, `Glowing Scorched.ba2`, `BobbleGlow.ba2`, `CapsTin.ba2`, `ore_glow.ba2`, `magzhiresnologo.ba2`
 25. **Marker / ESP mods** — `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP.ba2`, `ACEE.ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `BM_Red.ba2`, `ESP_NC_AiO.ba2`
-26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `legendarybeam.ba2`, `Guardian is not based.ba2`, `SHRBMute.ba2`
+26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `legendarybeam.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`, `SHRBMute.ba2`
 27. **Voiceline / audio removers** — `REVL_2.ba2`, `REVL_3.ba2`, `REVL_4.ba2`
 28. **Event / camp / map tweaks** — `BlackCamp.ba2`, `NoSiloElevatorHatch.ba2`, `RaidFuelESP.ba2`, `DoorsBGoneV14.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
 29. *(Last)* `Cr_Mrk_AiO.ba2`
@@ -84,5 +84,5 @@ After every response, speak the reply aloud using the MODUS TTS script:
 3. **Audio** — `76UltimateAudioOverhaul - v3.ba2`, `QuickDraw76.ba2`, `AppalachiaWarfare - Weapons/Bullets/Explosions.ba2`, `IRGSO.ba2`, `GaussWeaponFullChargeSound.BA2`, `SilentExplosiveBullets.ba2`, `DM Alternate Cannibal Sounds.ba2`, `Grelok - YouShallNotPass_EN.ba2`, `YEET throwing.ba2`, `BetterCollectibleFinderSounds.BA2`, `Emote sound replacer1.3.ba2`, `MOD_BetterExplosions.ba2`
 4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `PA-HoloHUD.ba2`, `NoSpinup.ba2`, `FastReloader.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `instantbowcharge.ba2`, `FastPlasmaCaster.ba2`, `Legendary FFR.ba2`, `999Gatling.ba2`, `DragonFFR.ba2`, `FFRSingle.ba2`, `GatlingGunFireRate.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `MoreLoot.ba2`, `PPHmix_KF1.ba2`
 5. **Weapon cosmetics** — `MWR Handmade Rifle Replacer.ba2`, `T60new_M/T.ba2`, `EVB_UA.ba2`, `EVB_UAM.ba2`, `TF2 Pulse Blade.ba2`
-6. **Gameplay misc** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `FPSBoost.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `LandWithYourKnees.ba2`, `Instant3rdPersonStim.ba2`
+6. **Gameplay misc** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `FPSBoost.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `Instant3rdPersonStim.ba2`
 7. **Cosmetics / outfits / hair** — `VTspa.ba2`, `CNV_PT.ba2`, `SF_DSUNI.ba2`, `fhair_391.ba2`, `nmixx_hair.ba2`, `SF_CPony.ba2`, `SF_scbe.ba2`, `VCHA.ba2`
