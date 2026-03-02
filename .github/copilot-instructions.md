@@ -58,7 +58,6 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `Glowing CSP Bobbers.ba2` — Glowing bobbleheads (unwanted)
 - `Lightbulb_Bobber.ba2` — Bobblehead texture (unwanted)
 - `GlowingGlowingBobbleheads.ba2` — Glowing bobbleheads (unwanted)
-- `BobbleheadStand.ba2` — Bobblehead display (unwanted)
 - `Mainframe_Cores_Glow.ba2` — Glowing cores (unwanted)
 - `Glowing Scorched.ba2` — Enemy glow effect (unwanted)
 - `BobbleGlow.ba2` — Bobblehead glow (unwanted)
@@ -94,7 +93,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 21. **Misc fixes / retextures** — `TV_Fix.ba2`, `Amiga.ba2`, `RLP.ba2`, `PepperShakerBlackRed.ba2`, `BetterLodge.ba2`, `CookingStove - RedLess.ba2`, `Kitchenset - Textures.ba2`
 22. **Maps** — `MilitaryMaps.ba2`, `BetterGITDMap.ba2`
 23. **Bobbers** — `Better_BH_M.ba2`, `Better_BH_T.ba2`
-24. **Glow mods** — `Glow.ba2`, `GlowMapFragments.ba2`, `GlowingKeys.ba2`, `ore_glow.ba2`, `magzhiresnologo.ba2`, `Cr_Mrk_AiO.ba2`
+24. **Glow mods** — `Glow.ba2`, `GlowMapFragments.ba2`, `BobbleheadStand.ba2`, `GlowingKeys.ba2`, `ore_glow.ba2`, `magzhiresnologo.ba2`, `Cr_Mrk_AiO.ba2`
 25. **Marker / ESP mods** — `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP.ba2`, `ACEE.ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `BM_Red.ba2`, `ESP_NC_AiO.ba2`
 26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `legendarybeam.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2.ba2`, `REVL_3.ba2`, `REVL_4.ba2`
