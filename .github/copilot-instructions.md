@@ -51,6 +51,19 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `Sci-Fi_ACT_M.ba2` / `Sci-Fi_ACT_T.ba2` — Outfit set (unwanted)
 - `EncFoun.ba2` — Enclave fountain prop (unwanted)
 - `BrainsBGone.ba2` — Brain textures (unwanted)
+- `FO1AthenaMenu.ba2` / `FO1Textures08.ba2` — World selector reskin (causes crashes)
+- `Monno_Bikini.ba2` — Outfit set (unwanted)
+- `EncPer.ba2` — Enclave decorative prop (unwanted)
+- `bobber_M.ba2` / `bobber_T.ba2` / `bobber_G.ba2` — Bobblehead textures (unwanted)
+- `Glowing CSP Bobbers.ba2` — Glowing bobbleheads (unwanted)
+- `Lightbulb_Bobber.ba2` — Bobblehead texture (unwanted)
+- `GlowingGlowingBobbleheads.ba2` — Glowing bobbleheads (unwanted)
+- `BobbleheadStand.ba2` — Bobblehead display (unwanted)
+- `Mainframe_Cores_Glow.ba2` — Glowing cores (unwanted)
+- `Glowing Scorched.ba2` — Enemy glow effect (unwanted)
+- `BobbleGlow.ba2` — Bobblehead glow (unwanted)
+- `CapsTin.ba2` — Container texture (unwanted)
+- `SHRBMute.ba2` — Audio mod (unwanted)
 
 When merging new mod lists from external sources, automatically skip these mods. If they appear in a provided configuration, remove them and proceed without mentioning their exclusion unless explicitly asked.
 
@@ -58,7 +71,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 - When adding new mods to `sResourceIndexFileList`, append them to the appropriate section.
 
 ### sResourceIndexFileList section order (follow this when placing new mods):
-1. **Music / map mods** — `MIHCMenu - Music.ba2`, `TZMap.ba2`, `FO1AthenaMenu.ba2`, `FO1Textures08.ba2`
+1. **Music / map mods** — `MIHCMenu - Music.ba2`, `TZMap.ba2`
 2. **Texture upscale packs** — `D1_2X.ba2` … `DA4_2X.ba2`, `O1_2X.ba2`
 3. **HD world/environment textures** — `76HDo_n.ba2`, `FBarSet.ba2`
 4. **Furniture / prop mesh+texture** — `DocOr_M/T.ba2`, `FancyBedMsh/Tx.ba2`, `APC.ba2`, `MGE_M.ba2`, `MGE_T.ba2`
@@ -76,16 +89,16 @@ When merging new mod lists from external sources, automatically skip these mods.
 16. **Object / glass fixes + sky** — `HDDoormat.ba2`, `NukaColaDoorGlassFix.ba2`, `ProtectronGlassFix.ba2`, `Alien glass fix.ba2`, `AoS_Aquarium.ba2`, `PrettySky.ba2`
 17. **Decorative / furniture cosmetics** — `SF_Kitchen_AiO.ba2`, `P80jet.ba2`, `VB02.ba2`, `Quality CubeMaps.ba2`, `STS.ba2`, `VTmaskA_surg.ba2`, `SF_BK_AiO.ba2`, `BLB.ba2`, `LStringCB19.ba2`, `SF_CrossB.ba2`, `securitron_vendorbot.ba2`, `AoS_BrambleToRoses.ba2`, `AoS_PottedPlant.ba2`, `EnclaveRug.ba2`
 18. **Paintings / display props** — `HDPaintings.ba2`, `FishTank.ba2`, `HBrah.ba2`, `TMummy.ba2`
-19. **More outfit sets** — `Monno_Bikini.ba2`, `PerkBoardTexRep.BA2`, `WillowTreeM/T.ba2`, `SF_quiet.ba2`, `SF_Ines.ba2`, `SF_MR.ba2`, `SF_SP.ba2`, `SF_CPL.ba2`
-20. **Lighting fixtures + misc props** — `LightFixtures.ba2`, `EncPer.ba2`, `MarineAPC.ba2`, `m48_patton_M.ba2`, `m48_patton_T.ba2`, `Metal_Barrels.ba2`, `BoS_Tac_Backpack.ba2`
+19. **More outfit sets** — `PerkBoardTexRep.BA2`, `WillowTreeM/T.ba2`, `SF_quiet.ba2`, `SF_Ines.ba2`, `SF_MR.ba2`, `SF_SP.ba2`, `fhair_391.ba2`, `nmixx_hair.ba2`, `SF_CPony.ba2`, `SF_scbe.ba2`, `VCHA.ba2`, `SF_CPL.ba2`
+20. **Lighting fixtures + misc props** — `LightFixtures.ba2`, `MarineAPC.ba2`, `m48_patton_M.ba2`, `m48_patton_T.ba2`, `Metal_Barrels.ba2`, `BoS_Tac_Backpack.ba2`
 21. **Misc fixes / retextures** — `TV_Fix.ba2`, `Amiga.ba2`, `RLP.ba2`, `PepperShakerBlackRed.ba2`, `BetterLodge.ba2`, `CookingStove - RedLess.ba2`, `Kitchenset - Textures.ba2`
 22. **Maps** — `MilitaryMaps.ba2`, `BetterGITDMap.ba2`
-23. **Bobbers** — `Better_BH_M.ba2`, `Better_BH_T.ba2`, `bobber_M/T/G.ba2`, `Glowing CSP Bobbers.ba2`, `Lightbulb_Bobber.ba2`
-24. **Glow mods** — `Glow.ba2`, `GlowMapFragments.ba2`, `GlowingGlowingBobbleheads.ba2`, `BobbleheadStand.ba2`, `GlowingKeys.ba2`, `Mainframe_Cores_Glow.ba2`, `Glowing Scorched.ba2`, `BobbleGlow.ba2`, `CapsTin.ba2`, `ore_glow.ba2`, `magzhiresnologo.ba2`, `Cr_Mrk_AiO.ba2`
+23. **Bobbers** — `Better_BH_M.ba2`, `Better_BH_T.ba2`
+24. **Glow mods** — `Glow.ba2`, `GlowMapFragments.ba2`, `GlowingKeys.ba2`, `ore_glow.ba2`, `magzhiresnologo.ba2`, `Cr_Mrk_AiO.ba2`
 25. **Marker / ESP mods** — `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP.ba2`, `ACEE.ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `BM_Red.ba2`, `ESP_NC_AiO.ba2`
-26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `legendarybeam.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`, `SHRBMute.ba2`
+26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `legendarybeam.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2.ba2`, `REVL_3.ba2`, `REVL_4.ba2`
-28. **Event / camp / map tweaks** — `BlackCamp.ba2`, `NoSiloElevatorHatch.ba2`, `RaidFuelESP.ba2`, `DoorsBGoneV14.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
+28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `RaidFuelESP.ba2`, `DoorsBGoneV14.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
 
 ---
 
@@ -104,4 +117,4 @@ When merging new mod lists from external sources, automatically skip these mods.
 4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `AnimNew.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `PA-HoloHUD.ba2`, `NoSpinup.ba2`, `FastReloader.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `instantbowcharge.ba2`, `FastPlasmaCaster.ba2`, `FFR100MELEE100.ba2`, `999Gatling.ba2`, `DragonFFR.ba2`, `FFRSingle.ba2`, `GatlingGunFireRate.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `MoreLoot2026.ba2`, `PPHmix_KF1.ba2`
 5. **Weapon cosmetics** — `MWR Handmade Rifle Replacer.ba2`, `T60new_M/T.ba2`, `EVB_UA.ba2`, `EVB_UAM.ba2`, `TF2 Pulse Blade.ba2`
 6. **Gameplay misc** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `FPSBoost.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `Instant3rdPersonStim.ba2`
-7. **Cosmetics / outfits / hair** — `VTspa.ba2`, `CNV_PT.ba2`, `SF_DSUNI.ba2`, `fhair_391.ba2`, `nmixx_hair.ba2`, `SF_CPony.ba2`, `SF_scbe.ba2`, `VCHA.ba2`
+7. **Cosmetics / outfits / hair** — `VTspa.ba2`, `CNV_PT.ba2`, `SF_DSUNI.ba2`
