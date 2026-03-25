@@ -79,7 +79,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 7. **Animations + blood effects** — `BetAnim_M.ba2`, `BetAnim_T.ba2`, `Beams.ba2`, `EnhancedBlood - Meshes.ba2`, `EnhancedBlood - Textures.ba2`, `EWSplash_Medium.ba2`
 8. **Props / mirrors / lighting fixes** — `Props - Main.ba2`, `Props - Textures.ba2`, `Better Mirrors_M.ba2`, `Better Mirrors_T.ba2`, `windoor.ba2`, `Diranars_PALight_Up.ba2`, `AFR.ba2`
 9. **Armor / clothing** — `2xArmorClothing.ba2`, `HDFixedBeret.ba2`, `BeltPack.ba2`, `Nuka_M.ba2`, `Nuka_T.ba2`, `2xPowerArmor.ba2`, `PA_Bundle.ba2`, `ReconPA_M.ba2`, `ReconPA_T.ba2`, `SS_ODST_M.ba2`, `SS_ODST_T.ba2`
-10. **Weapons** — `2xWeapons.ba2`, `AA_M.ba2`, `AA_T.ba2`
+10. **Weapons** — `2xWeapons.ba2`, `AA_M.ba2`, `AA_T.ba2`, `M16A1_HM_M.ba2`, `M16A1_HM_T.ba2`
 11. **World quality-of-life overhauls** — `Gloomy AIO (All-In-One) 2.2.ba2`, `4x Workstations.ba2`, `Widening the ground to prevent settlement.ba2`, `Fireplaces.ba2`, `Fire_Extinguisher_old_M.ba2`, `Fire_Extinguisher_old_T.ba2`, `WaterSD.ba2`, `SeventySixMod - JetpackDisabler.ba2`
 12. **Player body / environment cosmetics** — `Heartbags-M.ba2`, `Heartbags-T.ba2`, `Heartbags-Fix.ba2`, `ugly textures gone.ba2`, `PoA_Lights.ba2`, `bustv.ba2`, `SIA_M.ba2`, `SIA.ba2`, `EF_M.ba2`, `EF_T.ba2`, `plant_glow.ba2`, `BHP_M.ba2`, `FLORANIM_M.ba2`, `FLORANIM_T-2K.ba2`, `PrickeyeGlow.ba2`
 13. **NPC / creature body retextures** — `ACAB76_hottubM.ba2`, `ACAB76_hottubT.ba2`, `EVB76FIX_M.ba2`, `EVB76FIXG_M.ba2`, `EVB76FIX_T.ba2`, `Ghoul Textures.ba2`, `evb_ghoul_fix_T.ba2`, `Lost_EVB_Textures.ba2`, `EVB76_FIX_Lost.ba2`, `EVB_BAT.ba2`, `LUnd_M.ba2`, `LUnd_T.ba2`, `MaleUnderwear.ba2`
