@@ -98,7 +98,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 - Treat obvious joke audio, mute, laugh-track, or announcer replacements as blacklist candidates unless explicitly requested.
 - Treat pure glow/highlight ESP-style visibility mods as blacklist candidates unless explicitly requested.
 - Treat decorative sci-fi furniture, camp props, and one-off cosmetic outfit packs as blacklist candidates unless explicitly requested.
-- If a mod only appears in the retired commented `;sResourceArchive2List=` entry and is not in the active list, prefer keeping it excluded unless the member asks to restore it.
+- If a mod only appears in legacy notes or older backups (and not in the active list), prefer keeping it excluded unless the member asks to restore it.
 
 ## sResourceIndexFileList ordering rules
 - When adding new mods to `sResourceIndexFileList`, append them to the appropriate section.
@@ -145,8 +145,11 @@ When merging new mod lists from external sources, automatically skip these mods.
 - When adding **non-HUD mods** (sections 2–7), insert them in their appropriate section regardless of `ChatMod.ba2` — the ChatMod rule only governs the HUD section.
 
 ### Active-list notes:
-- `Fallout76Custom.ini` currently contains one retired, commented-out `;sResourceArchive2List=` entry followed by the active `sResourceArchive2List=` entry. Use the uncommented entry as authoritative.
-- The commented-out list contains older archives such as `Lockpick_Laugh_track_mod.ba2`, `InstantReloads.ba2`, `Legendary FFR.ba2`, `MoreLoot.ba2`, `krab cap.ba2`, `VatsChance.ba2`, and `DisableSmallSwitchDoors.ba2`; these are not part of the active load order.
+- `Fallout76Custom.ini` should keep one active, uncommented `sResourceArchive2List=` entry.
+- One optional commented `;sResourceArchive2List=` toggle line is allowed directly below the active line when intentionally used as a profile switch.
+- Current approved toggle pattern: active line uses `FFR100MELEE100.ba2`, optional commented line swaps that slot to `Legendary FFR.ba2`.
+- Remove any other legacy or duplicate commented `;sResourceArchive2List=` lines that are not the approved toggle line.
+- Legacy archives previously seen in the retired line include `Lockpick_Laugh_track_mod.ba2`, `InstantReloads.ba2`, `Legendary FFR.ba2`, `MoreLoot.ba2`, `krab cap.ba2`, `VatsChance.ba2`, and `DisableSmallSwitchDoors.ba2`; these are not part of the active load order.
 
 ### sResourceArchive2List section order (follow this when placing new mods):
 1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `CAMPSearch.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `EasyHacking.ba2`, `QuickBoyX1.0SC.ba2`, `PAFriendlyUI.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `sVATS.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `HUDModLoader.ba2`, `ChatMod.ba2`
