@@ -41,30 +41,64 @@ After every response, speak the reply aloud using the MODUS TTS script:
 
 ## Excluded Mods (Blacklist)
 **Never include these mods in any load order configuration:**
+
+### Audio / sound replacers
 - `WYFT.ba2` — Audio mod (unwanted)
 - `SMTM Pick Me Up.ba2` — Audio mod (unwanted)
 - `Lockpick_Laugh_track_mod.ba2` — Audio mod (unwanted)
+- `SHRBMute.ba2` — Audio mod (unwanted)
+
+### Glow / highlight mods
+- `Glowing CSP Bobbers.ba2` — Glowing bobbleheads (unwanted)
+- `GlowingGlowingBobbleheads.ba2` — Glowing bobbleheads (unwanted)
+- `Mainframe_Cores_Glow.ba2` — Glowing cores (unwanted)
+- `Glowing Scorched.ba2` — Enemy glow effect (unwanted)
+- `BetterGlowingMoleMiner.ba2` — Enemy glow effect (redundant with all-enemy glow)
+- `GlowingKeys.ba2` — Glow highlight mod (unwanted)
+- `BobbleGlow.ba2` — Bobblehead glow (unwanted)
+
+### Bobblehead / container texture swaps
+- `bobber_M.ba2` / `bobber_T.ba2` / `bobber_G.ba2` — Bobblehead textures (unwanted)
+- `Lightbulb_Bobber.ba2` — Bobblehead texture (unwanted)
+- `CapsTin.ba2` — Container texture (unwanted)
+
+### Decorative furniture / props
 - `sci-fi-panels_M.ba2` / `sci-fi-panels_T.ba2` — Decorative furniture (unwanted)
+- `EncFoun.ba2` — Enclave fountain prop (unwanted)
+- `EncPer.ba2` — Enclave decorative prop (unwanted)
+
+### Outfit / body cosmetics
 - `scifi_AD_M.ba2` / `scifi_AD_T.ba2` — Outfit set (unwanted)
 - `ScrapM.ba2` / `ScrapT.ba2` — Outfit set (unwanted)
 - `ASB_M.ba2` / `ASB_T.ba2` — Outfit set (unwanted)
 - `Sci-Fi_ACT_M.ba2` / `Sci-Fi_ACT_T.ba2` — Outfit set (unwanted)
-- `EncFoun.ba2` — Enclave fountain prop (unwanted)
-- `BrainsBGone.ba2` — Brain textures (unwanted)
-- `FO1AthenaMenu.ba2` / `FO1Textures08.ba2` — World selector reskin (causes crashes)
 - `Monno_Bikini.ba2` — Outfit set (unwanted)
-- `EncPer.ba2` — Enclave decorative prop (unwanted)
-- `bobber_M.ba2` / `bobber_T.ba2` / `bobber_G.ba2` — Bobblehead textures (unwanted)
-- `Glowing CSP Bobbers.ba2` — Glowing bobbleheads (unwanted)
-- `Lightbulb_Bobber.ba2` — Bobblehead texture (unwanted)
-- `GlowingGlowingBobbleheads.ba2` — Glowing bobbleheads (unwanted)
-- `Mainframe_Cores_Glow.ba2` — Glowing cores (unwanted)
-- `Glowing Scorched.ba2` — Enemy glow effect (unwanted)
-- `BobbleGlow.ba2` — Bobblehead glow (unwanted)
-- `CapsTin.ba2` — Container texture (unwanted)
-- `SHRBMute.ba2` — Audio mod (unwanted)
+- `BrainsBGone.ba2` — Brain textures (unwanted)
+
+### UI / menu crash-risk
+- `FO1AthenaMenu.ba2` / `FO1Textures08.ba2` — World selector reskin (causes crashes)
+
+### Legacy retired mods to keep excluded
+- `InstantReloads.ba2` — Retired gameplay/fire-rate mod from old Archive2 list
+- `Legendary FFR.ba2` — Retired fire-rate mod from old Archive2 list
+- `MoreLoot.ba2` — Retired loot mod from old Archive2 list
+- `krab cap.ba2` — Retired cosmetic mod from old Archive2 list
+- `VatsChance.ba2` — Retired VATS mod from old Archive2 list
+- `DisableSmallSwitchDoors.ba2` — Retired world-interaction tweak from old Archive2 list
+
+### Event / world-skip tweaks
+- `EarleNoWalls.ba2` — Event/world bypass tweak (unwanted)
+
+### Marker / ESP mods
+- `BM_Red.ba2` — Marker/ESP mod (unwanted)
 
 When merging new mod lists from external sources, automatically skip these mods. If they appear in a provided configuration, remove them and proceed without mentioning their exclusion unless explicitly asked.
+
+### Blacklist maintenance heuristics
+- Treat obvious joke audio, mute, laugh-track, or announcer replacements as blacklist candidates unless explicitly requested.
+- Treat pure glow/highlight ESP-style visibility mods as blacklist candidates unless explicitly requested.
+- Treat decorative sci-fi furniture, camp props, and one-off cosmetic outfit packs as blacklist candidates unless explicitly requested.
+- If a mod only appears in the retired commented `;sResourceArchive2List=` entry and is not in the active list, prefer keeping it excluded unless the member asks to restore it.
 
 ## sResourceIndexFileList ordering rules
 - When adding new mods to `sResourceIndexFileList`, append them to the appropriate section.
@@ -79,7 +113,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 7. **Animations + blood effects** — `BetAnim_M.ba2`, `BetAnim_T.ba2`, `Beams.ba2`, `EnhancedBlood - Meshes.ba2`, `EnhancedBlood - Textures.ba2`, `EWSplash_Medium.ba2`
 8. **Props / mirrors / lighting fixes** — `Props - Main.ba2`, `Props - Textures.ba2`, `Better Mirrors_M.ba2`, `Better Mirrors_T.ba2`, `windoor.ba2`, `Diranars_PALight_Up.ba2`, `AFR.ba2`
 9. **Armor / clothing** — `2xArmorClothing.ba2`, `HDFixedBeret.ba2`, `BeltPack.ba2`, `Nuka_M.ba2`, `Nuka_T.ba2`, `2xPowerArmor.ba2`, `PA_Bundle.ba2`, `ReconPA_M.ba2`, `ReconPA_T.ba2`, `SS_ODST_M.ba2`, `SS_ODST_T.ba2`
-10. **Weapons** — `2xWeapons.ba2`, `AA_M.ba2`, `AA_T.ba2`, `M16A1_HM_M.ba2`, `M16A1_HM_T.ba2`
+10. **Weapons** — `2xWeapons.ba2`, `AA_M.ba2`, `AA_T.ba2`, `M16A1_HM_M.ba2`, `M16A1_HM_T.ba2`, `M4A1_AR_M.ba2`, `M4A1_AR_T.ba2`, `strike_M.ba2`, `strike_T.ba2`, `TC_Proto_M.ba2`, `TC_Proto_T.ba2`
 11. **World quality-of-life overhauls** — `Gloomy AIO (All-In-One) 2.2.ba2`, `4x Workstations.ba2`, `Widening the ground to prevent settlement.ba2`, `Fireplaces.ba2`, `Fire_Extinguisher_old_M.ba2`, `Fire_Extinguisher_old_T.ba2`, `WaterSD.ba2`, `SeventySixMod - JetpackDisabler.ba2`
 12. **Player body / environment cosmetics** — `Heartbags-M.ba2`, `Heartbags-T.ba2`, `Heartbags-Fix.ba2`, `ugly textures gone.ba2`, `PoA_Lights.ba2`, `bustv.ba2`, `SIA_M.ba2`, `SIA.ba2`, `EF_M.ba2`, `EF_T.ba2`, `plant_glow.ba2`, `BHP_M.ba2`, `FLORANIM_M.ba2`, `FLORANIM_T-2K.ba2`, `PrickeyeGlow.ba2`
 13. **NPC / creature body retextures** — `ACAB76_hottubM.ba2`, `ACAB76_hottubT.ba2`, `EVB76FIX_M.ba2`, `EVB76FIXG_M.ba2`, `EVB76FIX_T.ba2`, `Ghoul Textures.ba2`, `evb_ghoul_fix_T.ba2`, `Lost_EVB_Textures.ba2`, `EVB76_FIX_Lost.ba2`, `EVB_BAT.ba2`, `LUnd_M.ba2`, `LUnd_T.ba2`, `MaleUnderwear.ba2`
@@ -93,7 +127,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 21. **Misc fixes / retextures** — `TV_Fix_M.ba2`, `TV_Fix_T.ba2`, `Amiga_M.ba2`, `Amiga_T.ba2`, `CO76LUT.ba2`, `RLP.ba2`, `PepperShakerBlackRed.ba2`, `BetterLodge.ba2`, `BetterLodge_T.ba2`, `CookingStove - RedLess.ba2`, `Kitchenset - Textures.ba2`, `HT01_M.ba2`, `HT01_T.ba2`, `SF_CPL_M.ba2`, `SF_CPL_T.ba2`
 22. **Maps** — `MilitaryMaps.ba2`, `BetterGITDMap.ba2`
 23. **Bobbers** — `Better_BH_M.ba2`, `Better_BH_T.ba2`
-24. **Glow mods** — `Glow.ba2`, `GlowMapFragments.ba2`, `BobbleheadStand_M.ba2`, `BobbleheadStand_T.ba2`, `GlowingKeys.ba2`, `ore_glow.ba2`, `magzhiresnologo.ba2`, `Cr_Mrk_AiO.ba2`
+24. **Glow mods** — `Glow.ba2`, `GlowMapFragments.ba2`, `BobbleheadStand_M.ba2`, `BobbleheadStand_T.ba2`, `ore_glow.ba2`, `magzhiresnologo.ba2`, `Cr_Mrk_AiO.ba2`
 25. **Marker / ESP mods** — `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP (v1.1.0).ba2`, `ACEE.ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `BM_Red.ba2`, `ESP_NC_AiO.ba2`
 26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `legendarybeam.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`, `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`, `REVL_4 - Lennox Voiceline Remover.ba2`
@@ -105,12 +139,17 @@ When merging new mod lists from external sources, automatically skip these mods.
 `sResourceArchive2List` contains HUD mods and SFE-dependent mods (loaded via the Script Extender).
 
 ### Last-entry rules (strictly enforced):
-- `HUDModLoader.ba2` is always the **last entry in the HUD section**. If `ChatMod.ba2` is present, it goes after `HUDModLoader.ba2` as the last entry of the HUD section instead.
-- When adding **HUD mods** (section 1), always insert them **before** `HUDModLoader.ba2` (or before `ChatMod.ba2` if present).
+- `HUDModLoader.ba2` is always the final framework loader entry.
+- If `ChatMod.ba2` is present, it stays immediately after `HUDModLoader.ba2` and is treated as a post-loader chat overlay entry rather than part of the core HUD framework ordering.
+- When adding **HUD mods** (section 1), always insert them **before** `HUDModLoader.ba2`.
 - When adding **non-HUD mods** (sections 2–7), insert them in their appropriate section regardless of `ChatMod.ba2` — the ChatMod rule only governs the HUD section.
 
+### Active-list notes:
+- `Fallout76Custom.ini` currently contains one retired, commented-out `;sResourceArchive2List=` entry followed by the active `sResourceArchive2List=` entry. Use the uncommented entry as authoritative.
+- The commented-out list contains older archives such as `Lockpick_Laugh_track_mod.ba2`, `InstantReloads.ba2`, `Legendary FFR.ba2`, `MoreLoot.ba2`, `krab cap.ba2`, `VatsChance.ba2`, and `DisableSmallSwitchDoors.ba2`; these are not part of the active load order.
+
 ### sResourceArchive2List section order (follow this when placing new mods):
-1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `CAMPSearch.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `EasyHacking.ba2`, `QuickBoyX1.0SC.ba2`, `PAFriendlyUI.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `sVATS.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `HUDModLoader.ba2` *(or `ChatMod.ba2` if present)*
+1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `CAMPSearch.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `EasyHacking.ba2`, `QuickBoyX1.0SC.ba2`, `PAFriendlyUI.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `sVATS.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `HUDModLoader.ba2`, `ChatMod.ba2`
 2. **QoL / gameplay UI** — `SkipMessagesConfigurable.ba2`, `ImprovedWorkbench.ba2`, `SimpleDPS.ba2`
 3. **Audio** — `76UltimateAudioOverhaul - v3.ba2`, `QuickDraw76.ba2`, `AppalachiaWarfare - Weapons.ba2`, `AppalachiaWarfare - Bullets.ba2`, `AppalachiaWarfare - Explosions.ba2`, `IRGSO.ba2`, `GaussWeaponFullChargeSound.BA2`, `SilentExplosiveBullets.ba2`, `DM Alternate Cannibal Sounds.ba2`, `Grelok - YouShallNotPass_EN.ba2`, `YEET throwing.ba2`, `BetterCollectibleFinderSounds.BA2`, `Emote sound replacer1.3.ba2`, `MOD_BetterExplosions.ba2`
 4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `AnimNew.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `PA-HoloHUD.ba2`, `NoSpinup.ba2`, `FastReloader.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `instantbowcharge.ba2`, `FastPlasmaCaster.ba2`, `FFR100MELEE100.ba2`, `999Gatling.ba2`, `DragonFFR.ba2`, `FFRSingle.ba2`, `GatlingGunFireRate.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `MoreLoot2026.ba2`, `PPHmix_KF1.ba2`
