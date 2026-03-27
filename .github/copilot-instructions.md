@@ -81,6 +81,13 @@ After every response, speak the reply aloud using the MODUS TTS script:
 ### Legacy retired mods to keep excluded
 - `InstantReloads.ba2` — Retired gameplay/fire-rate mod from old Archive2 list
 - `Legendary FFR.ba2` — Retired fire-rate mod from old Archive2 list
+- `FFRSingle.ba2` — Retired fire-rate mod from old Archive2 list
+- `999Gatling.ba2` — Retired fire-rate mod from old Archive2 list
+- `DragonFFR.ba2` — Retired fire-rate mod from old Archive2 list
+- `FastPlasmaCaster.ba2` — Retired fire-rate mod from old Archive2 list
+- `GammaGunFFR.ba2` — Retired fire-rate mod from old Archive2 list
+- `Q_Autoaxe.ba2` — Retired weapon-speed mod from old Archive2 list
+- `instantbowcharge.ba2` — Retired weapon-speed mod from old Archive2 list
 - `MoreLoot.ba2` — Retired loot mod from old Archive2 list
 - `krab cap.ba2` — Retired cosmetic mod from old Archive2 list
 - `VatsChance.ba2` — Retired VATS mod from old Archive2 list
@@ -149,13 +156,13 @@ When merging new mod lists from external sources, automatically skip these mods.
 - One optional commented `;sResourceArchive2List=` toggle line is allowed directly below the active line when intentionally used as a profile switch.
 - Current approved toggle pattern: active line uses `FFR100MELEE100.ba2`, optional commented line swaps that slot to `Legendary FFR.ba2`.
 - Remove any other legacy or duplicate commented `;sResourceArchive2List=` lines that are not the approved toggle line.
-- Legacy archives previously seen in the retired line include `Lockpick_Laugh_track_mod.ba2`, `InstantReloads.ba2`, `Legendary FFR.ba2`, `MoreLoot.ba2`, `krab cap.ba2`, `VatsChance.ba2`, and `DisableSmallSwitchDoors.ba2`; these are not part of the active load order.
+- Legacy archives previously seen in the retired line include `Lockpick_Laugh_track_mod.ba2`, `InstantReloads.ba2`, `Legendary FFR.ba2`, `FFRSingle.ba2`, `999Gatling.ba2`, `DragonFFR.ba2`, `FastPlasmaCaster.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `instantbowcharge.ba2`, `MoreLoot.ba2`, `krab cap.ba2`, `VatsChance.ba2`, and `DisableSmallSwitchDoors.ba2`; these are not part of the active load order.
 
 ### sResourceArchive2List section order (follow this when placing new mods):
 1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `CAMPSearch.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `EasyHacking.ba2`, `QuickBoyX1.0SC.ba2`, `PAFriendlyUI.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `sVATS.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `HUDModLoader.ba2`, `ChatMod.ba2`
 2. **QoL / gameplay UI** — `SkipMessagesConfigurable.ba2`, `ImprovedWorkbench.ba2`, `SimpleDPS.ba2`
 3. **Audio** — `76UltimateAudioOverhaul - v3.ba2`, `QuickDraw76.ba2`, `AppalachiaWarfare - Weapons.ba2`, `AppalachiaWarfare - Bullets.ba2`, `AppalachiaWarfare - Explosions.ba2`, `IRGSO.ba2`, `GaussWeaponFullChargeSound.BA2`, `SilentExplosiveBullets.ba2`, `DM Alternate Cannibal Sounds.ba2`, `Grelok - YouShallNotPass_EN.ba2`, `YEET throwing.ba2`, `BetterCollectibleFinderSounds.BA2`, `Emote sound replacer1.3.ba2`, `MOD_BetterExplosions.ba2`
-4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `AnimNew.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `HoloHUD_4PA-NoVisor.ba2`, `NoSpinup.ba2`, `FastReloader.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `instantbowcharge.ba2`, `FastPlasmaCaster.ba2`, `FFR100MELEE100.ba2`, `999Gatling.ba2`, `DragonFFR.ba2`, `FFRSingle.ba2`, `GatlingGunFireRate.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `MoreLoot2026.ba2`, `PPHmix_KF1.ba2`
+4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `AnimNew.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `HoloHUD_4PA-NoVisor.ba2`, `NoSpinup.ba2`, `FastReloader.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `FFR100MELEE100.ba2`, `GatlingGunFireRate.ba2`, `MoreLoot2026.ba2`, `PPHmix_KF1.ba2`
 5. **Weapon cosmetics** — `MWR Handmade Rifle Replacer - Main.ba2`, `MWR Handmade Rifle Replacer - Textures.ba2`, `T60new_M.ba2`, `T60new_T.ba2`, `EVB_UA.ba2`, `EVB_UAM.ba2`, `TF2 Pulse Blade - Main.ba2`, `TF2 Pulse Blade - Textures.ba2`
 6. **Gameplay misc** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `FPSBoost.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `Instant3rdPersonStim.ba2`
 7. **Cosmetics / outfits / hair** — `VTspa_M.ba2`, `VTspa_T.ba2`, `CNV_PT_M.ba2`, `CNV_PT_T.ba2`, `SF_DSUNI_M.ba2`, `SF_DSUNI_T.ba2`
