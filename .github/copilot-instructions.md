@@ -136,7 +136,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 23. **Bobbers** — `Better_BH_M.ba2`, `Better_BH_T.ba2`
 24. **Glow mods** — `Glow.ba2`, `GlowMapFragments.ba2`, `BobbleheadStand_M.ba2`, `BobbleheadStand_T.ba2`, `ore_glow.ba2`, `magzhiresnologo.ba2`, `Cr_Mrk_AiO.ba2`
 25. **Marker / ESP mods** — `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP (v1.1.0).ba2`, `ACEE.ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `BM_Red.ba2`, `ESP_NC_AiO.ba2`
-26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `legendarybeam.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
+26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `ESP_Legendaries.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`, `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`, `REVL_4 - Lennox Voiceline Remover.ba2`
 28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `RaidFuelESP.ba2`, `DoorsBGoneV14.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
 
