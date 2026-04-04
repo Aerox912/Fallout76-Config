@@ -83,7 +83,6 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `Legendary FFR.ba2` — Retired fire-rate mod from old Archive2 list
 - `FFRSingle.ba2` — Retired fire-rate mod from old Archive2 list
 - `999Gatling.ba2` — Retired fire-rate mod from old Archive2 list
-- `DragonFFR.ba2` — Retired fire-rate mod from old Archive2 list
 - `FastPlasmaCaster.ba2` — Retired fire-rate mod from old Archive2 list
 - `GammaGunFFR.ba2` — Retired fire-rate mod from old Archive2 list
 - `Q_Autoaxe.ba2` — Retired weapon-speed mod from old Archive2 list
@@ -156,7 +155,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 - One optional commented `;sResourceArchive2List=` toggle line is allowed directly below the active line when intentionally used as a profile switch.
 - Current approved toggle pattern: active line uses `FFR100MELEE100.ba2`, optional commented line swaps that slot to `Legendary FFR.ba2`.
 - Remove any other legacy or duplicate commented `;sResourceArchive2List=` lines that are not the approved toggle line.
-- Legacy archives previously seen in the retired line include `Lockpick_Laugh_track_mod.ba2`, `InstantReloads.ba2`, `Legendary FFR.ba2`, `FFRSingle.ba2`, `999Gatling.ba2`, `DragonFFR.ba2`, `FastPlasmaCaster.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `instantbowcharge.ba2`, `MoreLoot.ba2`, `krab cap.ba2`, `VatsChance.ba2`, and `DisableSmallSwitchDoors.ba2`; these are not part of the active load order.
+- Legacy archives previously seen in the retired line include `Lockpick_Laugh_track_mod.ba2`, `InstantReloads.ba2`, `Legendary FFR.ba2`, `FFRSingle.ba2`, `999Gatling.ba2`, `FastPlasmaCaster.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `instantbowcharge.ba2`, `MoreLoot.ba2`, `krab cap.ba2`, `VatsChance.ba2`, and `DisableSmallSwitchDoors.ba2`; these are not part of the active load order.
 
 ### sResourceArchive2List section order (follow this when placing new mods):
 1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `CAMPSearch.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `EasyHacking.ba2`, `QuickBoyX1.0SC.ba2`, `PAFriendlyUI.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `sVATS.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `HUDModLoader.ba2`, `ChatMod.ba2`
