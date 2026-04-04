@@ -91,6 +91,8 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `krab cap.ba2` — Retired cosmetic mod from old Archive2 list
 - `VatsChance.ba2` — Retired VATS mod from old Archive2 list
 - `DisableSmallSwitchDoors.ba2` — Retired world-interaction tweak from old Archive2 list
+- `FastReloader.ba2` — Retired reload mod; replaced by `FasterReload_-_Noclip.ba2`
+- `RaidFuelESP.ba2` — Retired event tweak; replaced by `bug_cans.ba2` in section 28
 
 ### Event / world-skip tweaks
 - `EarleNoWalls.ba2` — Event/world bypass tweak (unwanted)
@@ -137,7 +139,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 25. **Marker / ESP mods** — `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP (v1.1.0).ba2`, `ACEE.ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `BM_Red.ba2`, `ESP_NC_AiO.ba2`
 26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `ESP_Legendaries.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`, `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`, `REVL_4 - Lennox Voiceline Remover.ba2`
-28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `RaidFuelESP.ba2`, `DoorsBGoneV14.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
+28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `bug_cans.ba2`, `DoorsBGoneV14.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
 
 ---
 
@@ -161,7 +163,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `CAMPSearch.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `EasyHacking.ba2`, `QuickBoyX1.0SC.ba2`, `PAFriendlyUI.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `sVATS.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `HUDModLoader.ba2`, `ChatMod.ba2`
 2. **QoL / gameplay UI** — `SkipMessagesConfigurable.ba2`, `ImprovedWorkbench.ba2`, `SimpleDPS.ba2`
 3. **Audio** — `76UltimateAudioOverhaul - v3.ba2`, `QuickDraw76.ba2`, `AppalachiaWarfare - Weapons.ba2`, `AppalachiaWarfare - Bullets.ba2`, `AppalachiaWarfare - Explosions.ba2`, `IRGSO.ba2`, `GaussWeaponFullChargeSound.BA2`, `SilentExplosiveBullets.ba2`, `DM Alternate Cannibal Sounds.ba2`, `Grelok - YouShallNotPass_EN.ba2`, `YEET throwing.ba2`, `BetterCollectibleFinderSounds.BA2`, `Emote sound replacer1.3.ba2`, `MOD_BetterExplosions.ba2`
-4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `AnimNew.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `HoloHUD_4PA.ba2`, `HoloHUD_4PA-NoVisor.ba2`, `NoSpinup.ba2`, `FastReloader.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `FFR100MELEE100.ba2`, `GatlingGunFireRate.ba2`, `MoreLoot2026.ba2`, `PPHmix_KF1.ba2`
+4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `AnimNew.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `HoloHUD_4PA.ba2`, `HoloHUD_4PA-NoVisor.ba2`, `NoSpinup.ba2`, `FasterReload_-_Noclip.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `FFR100MELEE100.ba2`, `GatlingGunFireRate.ba2`, `MoreLoot2026.ba2`, `PPHmix_KF1.ba2`
 5. **Weapon cosmetics** — `MWR Handmade Rifle Replacer - Main.ba2`, `MWR Handmade Rifle Replacer - Textures.ba2`, `T60new_M.ba2`, `T60new_T.ba2`, `EVB_UA.ba2`, `EVB_UAM.ba2`, `TF2 Pulse Blade - Main.ba2`, `TF2 Pulse Blade - Textures.ba2`
 6. **Gameplay misc** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `FPSBoost.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `Instant3rdPersonStim.ba2`
 7. **Cosmetics / outfits / hair** — `VTspa_M.ba2`, `VTspa_T.ba2`, `CNV_PT_M.ba2`, `CNV_PT_T.ba2`, `SF_DSUNI_M.ba2`, `SF_DSUNI_T.ba2`
