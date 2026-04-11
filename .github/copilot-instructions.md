@@ -71,6 +71,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `scifi_AD_M.ba2` / `scifi_AD_T.ba2` — Outfit set (unwanted)
 - `ScrapM.ba2` / `ScrapT.ba2` — Outfit set (unwanted)
 - `ASB_M.ba2` / `ASB_T.ba2` — Outfit set (unwanted)
+- `SS_ODST_M.ba2` — Outfit set (unwanted)
 - `Sci-Fi_ACT_M.ba2` / `Sci-Fi_ACT_T.ba2` — Outfit set (unwanted)
 - `Monno_Bikini.ba2` — Outfit set (unwanted)
 - `BrainsBGone.ba2` — Brain textures (unwanted)
@@ -92,9 +93,10 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `VatsChance.ba2` — Retired VATS mod from old Archive2 list
 - `DisableSmallSwitchDoors.ba2` — Retired world-interaction tweak from old Archive2 list
 - `FastReloader.ba2` — Retired reload mod; replaced by `FasterReload_-_Noclip.ba2`
-- `RaidFuelESP.ba2` — Retired event tweak; replaced by `bug_cans.ba2` in section 28
+- `RaidFuelESP.ba2` — Retired event tweak (kept excluded)
 
 ### Event / world-skip tweaks
+- `NoRaidDrill.ba2` — Retired event/world-skip tweak (kept excluded)
 
 ### Marker / ESP mods
 - `BM_Red.ba2` — Marker/ESP mod (unwanted)
@@ -119,7 +121,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 6. **Architecture revamps** — `Br_Rev_M.ba2`, `Br_Rev_T.ba2`, `Br_Rev_Wood.ba2`, `GH_Rev_M.ba2`, `GH_Rev_T.ba2`, `OM_Rev_M.ba2`, `OM_Rev_T.ba2`, `GH_Glass_M.ba2`, `GH_Glass_T.ba2`
 7. **Animations + blood effects** — `BetAnim_M.ba2`, `BetAnim_T.ba2`, `Beams.ba2`, `EnhancedBlood - Meshes.ba2`, `EnhancedBlood - Textures.ba2`, `EWSplash_Medium.ba2`
 8. **Props / mirrors / lighting fixes** — `Props - Main.ba2`, `Props - Textures.ba2`, `Better Mirrors_M.ba2`, `Better Mirrors_T.ba2`, `windoor.ba2`, `Diranars_PALight_Up.ba2`, `AFR.ba2`
-9. **Armor / clothing** — `2xArmorClothing.ba2`, `HDFixedBeret.ba2`, `BeltPack.ba2`, `Nuka_M.ba2`, `Nuka_T.ba2`, `2xPowerArmor.ba2`, `PA_Bundle.ba2`, `ReconPA_M.ba2`, `ReconPA_T.ba2`, `SS_ODST_M.ba2`, `SS_ODST_T.ba2`
+9. **Armor / clothing** — `2xArmorClothing.ba2`, `HDFixedBeret.ba2`, `BeltPack.ba2`, `Nuka_M.ba2`, `Nuka_T.ba2`, `2xPowerArmor.ba2`, `PA_Bundle.ba2`, `ReconPA_M.ba2`, `ReconPA_T.ba2`, `SS_ODST_T.ba2`
 10. **Weapons** — `2xWeapons.ba2`, `AA_M.ba2`, `AA_T.ba2`, `M16A1_HM_M.ba2`, `M16A1_HM_T.ba2`, `M4A1_AR_M.ba2`, `M4A1_AR_T.ba2`, `strike_M.ba2`, `strike_T.ba2`, `TC_Proto_M.ba2`, `TC_Proto_T.ba2`
 11. **World quality-of-life overhauls** — `Gloomy AIO (All-In-One) 2.2.ba2`, `4x Workstations.ba2`, `Widening the ground to prevent settlement.ba2`, `Fireplaces.ba2`, `Fire_Extinguisher_old_M.ba2`, `Fire_Extinguisher_old_T.ba2`, `WaterSD.ba2`, `SeventySixMod - JetpackDisabler.ba2`
 12. **Player body / environment cosmetics** — `Heartbags-M.ba2`, `Heartbags-T.ba2`, `Heartbags-Fix.ba2`, `ugly textures gone.ba2`, `PoA_Lights.ba2`, `bustv.ba2`, `SIA_M.ba2`, `SIA.ba2`, `EF_M.ba2`, `EF_T.ba2`, `plant_glow.ba2`, `BHP_M.ba2`, `FLORANIM_M.ba2`, `FLORANIM_T-2K.ba2`, `PrickeyeGlow.ba2`
@@ -138,7 +140,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 25. **Marker / ESP mods** — `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP (v1.1.0).ba2`, `ACEE.ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `BM_Red.ba2`, `ESP_NC_AiO.ba2`
 26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `ESP_Legendaries.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`, `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`, `REVL_4 - Lennox Voiceline Remover.ba2`
-28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `bug_cans.ba2`, `DoorsBGoneV14.ba2`, `NoRaidDrill.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
+28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `DoorsBGoneV14.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
 
 ---
 
