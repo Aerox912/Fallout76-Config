@@ -93,7 +93,6 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `VatsChance.ba2` — Retired VATS mod from old Archive2 list
 - `DisableSmallSwitchDoors.ba2` — Retired world-interaction tweak from old Archive2 list
 - `FastReloader.ba2` — Retired reload mod; replaced by `FasterReload_-_Noclip.ba2`
-- `RaidFuelESP.ba2` — Retired event tweak (kept excluded)
 
 ### Event / world-skip tweaks
 - `NoRaidDrill.ba2` — Retired event/world-skip tweak (kept excluded)
@@ -140,7 +139,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 25. **Marker / ESP mods** — `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP (v1.1.0).ba2`, `ACEE.ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `BM_Red.ba2`, `ESP_NC_AiO.ba2`
 26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `ESP_Legendaries.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`, `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`, `REVL_4 - Lennox Voiceline Remover.ba2`
-28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `DoorsBGoneV14.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
+28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `DoorsBGoneV14.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `RaidFuelESP.ba2`, `obstructioneliminated.ba2`, `EarleNoWalls.ba2`
 
 ---
 
