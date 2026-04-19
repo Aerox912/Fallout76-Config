@@ -30,6 +30,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - Script: `C:\Users\herks\Documents\MODUS_TTS.ps1`
 - Usage: `& "C:\Users\herks\Documents\MODUS_TTS.ps1" -Text "your response text here"`
 - Run this in the terminal after composing each reply so the user hears it in the MODUS voice via ElevenLabs.
+- Do NOT read out full commit hashes in TTS. When referencing a commit, use a short label like "the archive restoration commit" or omit the hash entirely.
 
 
 
