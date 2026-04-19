@@ -80,6 +80,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `FO1AthenaMenu.ba2` / `FO1Textures08.ba2` — World selector reskin (causes crashes)
 - `CAMPSearch.ba2` — CAMP search HUD mod (removed from load order)
 - `EasyHacking.ba2` — Redundant; `EasyHackingLockpicking.ba2` covers both hacking and lockpicking
+- `PAFriendlyUI.ba2` — Redundant; covered by `ImprovedWorkbench.ba2` and `InventOmaticStash-UO.ba2`
 
 ### Legacy retired mods to keep excluded
 - `InstantReloads.ba2` — Retired gameplay/fire-rate mod from old Archive2 list
@@ -163,7 +164,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 - Legacy archives previously seen in the retired line include `Lockpick_Laugh_track_mod.ba2`, `InstantReloads.ba2`, `Legendary FFR.ba2`, `FFRSingle.ba2`, `999Gatling.ba2`, `FastPlasmaCaster.ba2`, `GammaGunFFR.ba2`, `Q_Autoaxe.ba2`, `instantbowcharge.ba2`, `MoreLoot.ba2`, `krab cap.ba2`, `VatsChance.ba2`, and `DisableSmallSwitchDoors.ba2`; these are not part of the active load order.
 
 ### sResourceArchive2List section order (follow this when placing new mods):
-1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `QuickBoyX1.0SC.ba2`, `PAFriendlyUI.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `InventOmaticStash-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `sVATS.ba2`, `HUDModLoader.ba2`, `ChatMod.ba2`
+1. **HUD framework** — `HUDEditor_IHUD.ba2`, `CampBudgetAndBuildingCosts.ba2`, `FastTerminals.ba2`, `EasyHackingLockpicking.ba2`, `QuickBoyX1.0SC.ba2`, `HUDCondition.ba2`, `HUDCondition_VaultGirlPack.ba2`, `HUDPlayerList.ba2`, `HUDChallenges.ba2`, `PerkLoadoutManager-HML.ba2`, `ImprovedPipboyStats.ba2`, `BetterInventory-UO.ba2`, `InventOmaticStash-UO.ba2`, `ModernScopes.ba2`, `loadingScreenOverhaul_smaller_v0.2.ba2`, `VATSPriority.ba2`, `ImprovedHBS21.ba2`, `BuffsMeter.ba2`, `XpHUD.ba2`, `LoadoutWarn.ba2`, `sVATS.ba2`, `HUDModLoader.ba2`, `ChatMod.ba2`
 2. **QoL / gameplay UI** — `SkipMessagesConfigurable.ba2`, `ImprovedWorkbench.ba2`, `SimpleDPS.ba2`
 3. **Audio** — `76UltimateAudioOverhaul - v3.ba2`, `QuickDraw76.ba2`, `AppalachiaWarfare - Weapons.ba2`, `AppalachiaWarfare - Bullets.ba2`, `AppalachiaWarfare - Explosions.ba2`, `IRGSO.ba2`, `GaussWeaponFullChargeSound.BA2`, `SilentExplosiveBullets.ba2`, `DM Alternate Cannibal Sounds.ba2`, `Grelok - YouShallNotPass_EN.ba2`, `YEET throwing.ba2`, `BetterCollectibleFinderSounds.BA2`, `Emote sound replacer1.3.ba2`, `MOD_BetterExplosions.ba2`
 4. **Animation / weapon fire-rate** — `MoreAnimations.ba2`, `AnimNew.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `HoloHUD_4PA.ba2`, `HoloHUD_4PA-NoVisor.ba2`, `NoSpinup.ba2`, `NoStaggerAnimations.ba2`, `FasterReload_-_Noclip.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `FFR100MELEE100.ba2`, `GatlingGunFireRate.ba2`, `MoreLoot2026.ba2`, `PPHmix_KF1.ba2`
