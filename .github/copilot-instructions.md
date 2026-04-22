@@ -124,6 +124,8 @@ When merging new mod lists from external sources, automatically skip these mods.
 - The category sequence below mirrors `Fallout76Custom reference.ini`.
 - If a mod is not present in the reference list, keep it with the nearest matching category block (do not create ad-hoc out-of-order clusters).
 - Blacklist rules still apply even if a blacklisted archive appears in the reference file.
+- Keep section 28 (**Event / camp / map tweaks**) as the final block in active `sResourceIndexFileList` so world-removal overrides resolve last.
+- For section 28 ordering, keep `DoorsBGoneV14.ba2` ahead of downstream event tweaks in the block (for example `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `RaidFuelESP.ba2`) to reduce residual collision/marker geometry.
 
 ### sResourceIndexFileList section order (follow this when placing new mods):
 1. **Music / menu / map bootstrap** — `MIHCMenu - Music.ba2`, `TZMap.ba2`
