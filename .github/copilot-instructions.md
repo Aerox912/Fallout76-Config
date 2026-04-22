@@ -125,7 +125,6 @@ When merging new mod lists from external sources, automatically skip these mods.
 - If a mod is not present in the reference list, keep it with the nearest matching category block (do not create ad-hoc out-of-order clusters).
 - Blacklist rules still apply even if a blacklisted archive appears in the reference file.
 - Keep section 28 (**Event / camp / map tweaks**) as the final block in active `sResourceIndexFileList` so world-removal overrides resolve last.
-- For section 28 ordering, keep `DoorsBGoneV14.ba2` ahead of downstream event tweaks in the block (for example `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `RaidFuelESP.ba2`) to reduce residual collision/marker geometry.
 
 ### sResourceIndexFileList section order (follow this when placing new mods):
 1. **Music / menu / map bootstrap** — `MIHCMenu - Music.ba2`, `TZMap.ba2`
@@ -155,7 +154,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 25. **Marker / ESP mods** — `ACEE.ba2`, `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP (v1.1.0).ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `ESP_NC_AiO.ba2`
 26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `ESP_Legendaries.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`, `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`, `REVL_4 - Lennox Voiceline Remover.ba2`
-28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `DoorsBGoneV14.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `RaidFuelESP.ba2`, `obstructioneliminated.ba2`
+28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `RaidFuelESP.ba2`, `obstructioneliminated.ba2`
 
 ---
 
@@ -167,6 +166,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 - If `ChatMod.ba2` is present, it stays immediately after `HUDModLoader.ba2` and is treated as a post-loader chat overlay entry rather than part of the core HUD framework ordering.
 - When adding **HUD mods** (section 1), always insert them **before** `HUDModLoader.ba2`.
 - When adding **non-HUD mods** (sections 2–7), insert them in their appropriate section regardless of `ChatMod.ba2` — the ChatMod rule only governs the HUD section.
+- Keep `DoorsBGoneV14.ba2` as the final entry in active `sResourceArchive2List` when enabled.
 
 ### Active-list notes:
 - `Fallout76Custom.ini` should keep one active, uncommented `sResourceArchive2List=` entry.
@@ -184,4 +184,4 @@ When merging new mod lists from external sources, automatically skip these mods.
 4. **Weapon cosmetics** — `MWR Handmade Rifle Replacer - Main.ba2`, `MWR Handmade Rifle Replacer - Textures.ba2`, `T60new_M.ba2`, `T60new_T.ba2`, `EVB_UA.ba2`, `EVB_UAM.ba2`, `TF2 Pulse Blade - Main.ba2`, `TF2 Pulse Blade - Textures.ba2`
 5. **Gameplay misc / world tweaks** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `FPSBoost.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `Instant3rdPersonStim.ba2`, `NoCampCollision.ba2`, `EnclaveFusioncore.ba2`, `MGE_M.ba2`, `MGE_T.ba2`, `m48_patton_M.ba2`, `m48_patton_T.ba2`
 6. **Cosmetics / outfits / hair / camp props** — `VTspa_M.ba2`, `VTspa_T.ba2`, `CNV_PT_M.ba2`, `CNV_PT_T.ba2`, `SF_DSUNI_M.ba2`, `SF_DSUNI_T.ba2`, `EnclaveRug.ba2`, `HT01_M.ba2`, `HT01_T.ba2`, `BobbleheadStand_M.ba2`, `BobbleheadStand_T.ba2`, `SG_decon_M.ba2`, `SG_decon_T.ba2`
-7. **Weapon model packs** — `M16A1_HM_M.ba2`, `M16A1_HM_T.ba2`, `M4A1_AR_M.ba2`, `M4A1_AR_T.ba2`, `strike_M.ba2`, `strike_T.ba2`, `TC_Proto_M.ba2`, `TC_Proto_T.ba2`
+7. **Weapon model packs + archive tail override** — `M16A1_HM_M.ba2`, `M16A1_HM_T.ba2`, `M4A1_AR_M.ba2`, `M4A1_AR_T.ba2`, `strike_M.ba2`, `strike_T.ba2`, `TC_Proto_M.ba2`, `TC_Proto_T.ba2`, `DoorsBGoneV14.ba2`
