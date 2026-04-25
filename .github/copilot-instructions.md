@@ -102,6 +102,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `DisableSmallSwitchDoors.ba2` — Retired world-interaction tweak from old Archive2 list
 - `FastReloader.ba2` — Legacy reload variant; use only in the reload slot when explicitly preferred over `FasterReload_-_Noclip.ba2`
 - `NoStaggerAnimations.ba2` — Non-functional animation mod (removed)
+- `HoloHUD_4PA-NoVisor.ba2` — Retired HUD visor overlay (removed)
 
 ### Event / world-skip tweaks
 - `NoRaidDrill.ba2` — Retired event/world-skip tweak (kept excluded)
