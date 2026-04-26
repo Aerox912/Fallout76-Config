@@ -108,6 +108,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `NoRaidDrill.ba2` — Retired event/world-skip tweak (kept excluded)
 - `EarleNoWalls.ba2` — Retired event/world-skip tweak (kept excluded)
 - `SeventySixMod - JetpackDisabler.ba2` — Jetpack disabler (unwanted)
+- `NoCampCollision.ba2` — CAMP collision remover (unwanted)
 
 ### Marker / ESP mods
 - `BM_Red.ba2` — Marker/ESP mod (unwanted)
