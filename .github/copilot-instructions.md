@@ -64,7 +64,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 
 ### Bobblehead / container texture swaps
 - `bobber_M.ba2` / `bobber_T.ba2` / `bobber_G.ba2` — Bobblehead textures (unwanted)
-- `Lightbulb_Bobber.ba2` — Bobblehead texture (unwanted)
+- `Lightbulb_Bobber_M.ba2` / `Lightbulb_Bobber_T.ba2` — Bobblehead textures (unwanted)
 - `CapsTin.ba2` — Container texture (unwanted)
 
 ### Decorative furniture / props
@@ -78,7 +78,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `ASB_M.ba2` / `ASB_T.ba2` — Outfit set (unwanted)
 - `SS_ODST_M.ba2` / `SS_ODST_T.ba2` — Outfit set (unwanted)
 - `Sci-Fi_ACT_M.ba2` / `Sci-Fi_ACT_T.ba2` — Outfit set (unwanted)
-- `Monno_Bikini.ba2` — Outfit set (unwanted)
+- `Monno_Bikini_M.ba2` / `Monno_Bikini_T.ba2` — Outfit set (unwanted)
 - `BrainsBGone.ba2` — Brain textures (unwanted)
 
 ### UI / menu crash-risk
@@ -88,6 +88,16 @@ After every response, speak the reply aloud using the MODUS TTS script:
 - `PAFriendlyUI.ba2` — Redundant; covered by `ImprovedWorkbench.ba2` and `InventOmaticStash-UO.ba2`
 
 ### Legacy retired mods to keep excluded
+- `BetterFishing.ba2` — Retired fishing mod
+- `BlackCamp.ba2` — Retired CAMP cosmetic mod
+- `Vulcan - Galaxy - Pearlescent.ba2` — Retired power-armor cosmetic mod
+- `FFR1000.ba2` / `FFR5000.ba2` / `FFR500000.ba2` / `FFRAuto.ba2` / `FasterFirerate_2.0.ba2` / `FasterMelee.ba2` — Retired fire-rate and weapon-speed mods
+- `bug_cans.ba2` — Retired gameplay mod
+- `fuel_ESP.ba2` — Retired fuel ESP mod
+- `vatschance2026-107.ba2` — Retired VATS mod
+- `REVL_1 - Remove All.ba2` / `REVL_5 - The Pitt (Union Dues) Characters Voiceline Remover.ba2` / `REVL_6 - The Pitt (Ashes to Fire) Characters Voiceline Remover.ba2` / `REVL_7 - Atlantic City (Tax Evasion) Characters Voiceline Remover.ba2` / `REVL_8 - Atlantic City (The Most Sensational Game) Characters Voiceline Remover.ba2` / `REVL_9 - All Generic NPCs and Enemies.ba2` / `REVL_10 - Whitespring Refuge NPCs.ba2` — Retired voiceline remover variants
+- `HDPosters.ba2` — Retired poster texture mod
+- `NoSiloDoors.ba2` — Retired silo-door removal mod
 - `InstantReloads.ba2` — Retired gameplay/fire-rate mod from old Archive2 list
 - `Legendary FFR.ba2` — Retired fire-rate mod from old Archive2 list
 - `FFRSingle.ba2` — Retired fire-rate mod from old Archive2 list
@@ -112,6 +122,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 
 ### Marker / ESP mods
 - `BM_Red.ba2` — Marker/ESP mod (unwanted)
+- `BM_Blue.ba2` / `BM_Cyan.ba2` / `BM_Green.ba2` / `BM_Pink.ba2` / `BM_Yellow.ba2` / `Bm_White.ba2` — Marker/ESP mods (unwanted)
 
 When merging new mod lists from external sources, automatically skip these mods. If they appear in a provided configuration, remove them and proceed without mentioning their exclusion unless explicitly asked.
 
@@ -126,6 +137,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 - The category sequence below mirrors `Fallout76Custom reference.ini`.
 - If a mod is not present in the reference list, keep it with the nearest matching category block (do not create ad-hoc out-of-order clusters).
 - Blacklist rules still apply even if a blacklisted archive appears in the reference file.
+- Never copy base-game `SeventySix - Interface.ba2`, `SeventySix - Interface_en.ba2`, or `SeventySix - Localization.ba2` startup archives into either custom mod list.
 - Keep section 28 (**Event / camp / map tweaks**) as the final block in active `sResourceIndexFileList` so world-removal overrides resolve last.
 
 ### sResourceIndexFileList section order (follow this when placing new mods):
@@ -136,27 +148,27 @@ When merging new mod lists from external sources, automatically skip these mods.
 5. **World / environment overhauls** — `FGB_AiO_M.ba2`, `FGB_AiO_T.ba2`, `Fake_Glass_Begone_Dpl_M.ba2`, `FTB_M.ba2`, `FTB_T.ba2`, `NO Scum - Main.ba2`, `NO Scum - Textures.ba2`
 6. **Architecture revamps** — `Br_Rev_M.ba2`, `Br_Rev_T.ba2`, `Br_Rev_Wood.ba2`, `GH_Rev_M.ba2`, `GH_Rev_T.ba2`, `OM_Rev_M.ba2`, `OM_Rev_T.ba2`, `GH_Glass_M.ba2`, `GH_Glass_T.ba2`
 7. **Animations + blood effects** — `BetAnim_M.ba2`, `BetAnim_T.ba2`, `Beams.ba2`, `EnhancedBlood - Meshes.ba2`, `EnhancedBlood - Textures.ba2`, `EWSplash_Medium.ba2`
-8. **Props / mirrors / lighting fixes** — `Props - Main.ba2`, `Props - Textures.ba2`, `Better Mirrors_M.ba2`, `Better Mirrors_T.ba2`, `windoor.ba2`, `Diranars_PALight_Up.ba2`, `AFR.ba2`
+8. **Props / mirrors / lighting fixes** — `Props - Main.ba2`, `Props - Textures.ba2`, `Better Mirrors_M.ba2`, `Better Mirrors_T.ba2`, `windoor.ba2`, `Diranars_PALight_Up.ba2`, `CCO76 - Main.ba2`, `AFR.ba2`
 9. **Armor / clothing** — `2xArmorClothing.ba2`, `HDFixedBeret.ba2`, `Nuka_M.ba2`, `Nuka_T.ba2`, `2xPowerArmor.ba2`, `PA_Bundle.ba2`, `ReconPA_M.ba2`, `ReconPA_T.ba2`, `BeltPack.ba2`, `Vulcan - Nuclear Winter.ba2`
 10. **Weapons** — `2xWeapons.ba2`, `AA_M.ba2`, `AA_T.ba2`
 11. **World quality-of-life overhauls** — `Gloomy AIO (All-In-One) 2.2.ba2`, `4x Workstations.ba2`, `Widening the ground to prevent settlement.ba2`, `Fireplaces.ba2`, `Fire_Extinguisher_old_M.ba2`, `Fire_Extinguisher_old_T.ba2`, `WaterSD.ba2`
 12. **Player body / environment cosmetics** — `Heartbags-M.ba2`, `Heartbags-T.ba2`, `Heartbags-Fix.ba2`, `ugly textures gone.ba2`, `PoA_Lights.ba2`, `bustv.ba2`, `SIA_M.ba2`, `SIA.ba2`, `EF_M.ba2`, `EF_T.ba2`, `plant_glow.ba2`, `FLORANIM_M.ba2`, `FLORANIM_T-2K.ba2`, `PrickeyeGlow.ba2`, `BHP_M.ba2`
 13. **NPC / creature body retextures** — `ACAB76_hottubM.ba2`, `ACAB76_hottubT.ba2`, `EVB76FIX_M.ba2`, `EVB76FIXG_M.ba2`, `EVB76FIX_T.ba2`, `Ghoul Textures.ba2`, `evb_ghoul_fix_T.ba2`, `Lost_EVB_Textures.ba2`, `EVB76_FIX_Lost.ba2`, `EVB_BAT.ba2`, `LUnd_M.ba2`, `LUnd_T.ba2`, `MaleUnderwear.ba2`
-14. **Player outfit cosmetics** — `Mag_Dag.ba2`, `WSH_T.ba2`, `SF_RetroPP_M.ba2`, `SF_RetroPP_T.ba2`, `SF_RetroPP_1_M.ba2`, `ACAB76_corpsesM.ba2`, `ACAB76_corpsesT.ba2`, `EyesOfAppalachia.ba2`
-15. **Creature reskins** — `ScorchedHeadExplosion.ba2`, `BetterWendigos.ba2`, `Scorched Scorchbeasts.ba2`, `USBQ-8-Starship_Main.ba2`, `USBQ_Textures.ba2`, `USBQ_BrighterWings4K.ba2`
-16. **Object / glass fixes + sky** — `HDDoormat.ba2`, `NukaColaDoorGlassFix.ba2`, `ProtectronGlassFix.ba2`, `Alien glass fix.ba2`, `AoS_Aquarium.ba2`, `AoS_Aquarium_T.ba2`, `PrettySkyM.ba2`, `PrettySkyT.ba2`
+14. **Player outfit cosmetics** — `Mag_Dag.ba2`, `MagDag_M.ba2`, `MagDag_T.ba2`, `WSH_T.ba2`, `SF_RetroPP_M.ba2`, `SF_RetroPP_T.ba2`, `SF_RetroPP_1_M.ba2`, `ACAB76_corpsesM.ba2`, `ACAB76_corpsesT.ba2`, `EyesOfAppalachia.ba2`
+15. **Creature reskins** — `ScorchedHeadExplosion.ba2`, `BetterWendigos.ba2`, `Scorched Scorchbeasts.ba2`, `USBQ-8-Starship_Main.ba2`, `USBQ_Textures.ba2`, `USBQ_BrighterWings4K.ba2`, `SciFiDog_T.ba2`
+16. **Object / glass fixes + sky** — `HDDoormat.ba2`, `NukaColaDoorGlassFix.ba2`, `ProtectronGlassFix.ba2`, `Alien glass fix.ba2`, `AoS_Aquarium.ba2`, `AoS_Aquarium_T.ba2`, `CleanAxoAquarium_M.ba2`, `CleanAxoAquarium_T.ba2`, `PrettySkyM.ba2`, `PrettySkyT.ba2`
 17. **Decorative / furniture cosmetics** — `SF_Kitchen_AiO_M.ba2`, `SF_Kitchen_AiO_T.ba2`, `P80jet_M.ba2`, `P80jet_T.ba2`, `VB02_M.ba2`, `VB02_T.ba2`, `Quality CubeMaps - HD Cube Maps.ba2`, `STS_M.ba2`, `STS_T.ba2`, `VTmaskA_surg_M.ba2`, `VTmaskA_surg_T.ba2`, `SF_BK_AiO_M.ba2`, `SF_BK_AiO_T.ba2`, `BLB_M.ba2`, `BLB_T.ba2`, `LStringCB19_M.ba2`, `LStringCB19_T.ba2`, `LStringCB19_TT.ba2`, `SF_CrossB_M.ba2`, `SF_CrossB_T.ba2`, `securitron_vendorbot.ba2`, `AoS_BrambleToRoses_XLgRedWhite01.ba2`, `AoS_PottedPlant_Tex.ba2`, `AoS_PottedPlant_Set06.ba2`, `EnclaveRug.ba2`, `SG_decon_M.ba2`, `SG_decon_T.ba2`
 18. **Paintings / display props** — `HDPaintings.ba2`, `FishTank_M.ba2`, `FishTank_T.ba2`, `HBrah_M.ba2`, `HBrah_T.ba2`, `TMummy_M.ba2`, `TMummy_T.ba2`
-19. **Hair / outfit cosmetics** — `PerkBoardTexRep.BA2`, `PerkBoardTexRep2.BA2`, `WillowTreeM.ba2`, `WillowTreeT.ba2`, `SF_quiet_M.ba2`, `SF_quiet_T.ba2`, `SF_Ines_M.ba2`, `SF_Ines_T.ba2`, `SF_MR_M.ba2`, `SF_MR_T.ba2`, `SF_SP_M.ba2`, `SF_SP_T.ba2`, `fhair_391_M.ba2`, `fhair_391_T.ba2`, `nmixx_hair_M.ba2`, `nmixx_hair_T.ba2`, `SF_CPony_M.ba2`, `SF_CPony_T.ba2`, `SF_scbe_M.ba2`, `SF_scbe_T.ba2`, `VCHA_M.ba2`, `VCHA_T.ba2`
+19. **Hair / outfit cosmetics** — `PerkBoardTexRep.BA2`, `PerkBoardTexRep2.BA2`, `WillowTreeM.ba2`, `WillowTreeT.ba2`, `SF_quiet_M.ba2`, `SF_quiet_T.ba2`, `SF_Ines_M.ba2`, `SF_Ines_T.ba2`, `SF_MR_M.ba2`, `SF_MR_T.ba2`, `SF_SP_M.ba2`, `SF_SP_T.ba2`, `fhair_391_M.ba2`, `fhair_391_T.ba2`, `nmixx_hair_M.ba2`, `nmixx_hair_T.ba2`, `SF_CPony_M.ba2`, `SF_CPony_T.ba2`, `SF_scbe_M.ba2`, `SF_scbe_T.ba2`, `CP_panam_M.ba2`, `CP_panam_T.ba2`, `FS_M.ba2`, `FS_T.ba2`, `gloria_M.ba2`, `gloria_T.ba2`, `LeatherS_M.ba2`, `LeatherS_T.ba2`, `Lilly_M.ba2`, `Lilly_T.ba2`, `Pirate_M.ba2`, `Pirate_T.ba2`, `VH_T.ba2`, `ASL_T.ba2`, `VCHA_M.ba2`, `VCHA_T.ba2`, `SF_PigTails_M.ba2`, `SF_PigTails_T.ba2`, `SF_aerith_OD_M.ba2`, `SF_aerith_OD_T.ba2`
 20. **Lighting fixtures + misc props** — `LightFixtures - Main.ba2`, `LightFixtures - Textures.ba2`, `MarineAPC_M.ba2`, `MarineAPC_T.ba2`, `m48_patton_M.ba2`, `m48_patton_T.ba2`, `Metal_Barrels.ba2`, `BoS_Tac_Backpack.ba2`
 21. **Misc fixes / retextures** — `TV_Fix_M.ba2`, `TV_Fix_T.ba2`, `Amiga_M.ba2`, `Amiga_T.ba2`, `CO76LUT.ba2`, `RLP.ba2`, `PepperShakerBlackRed.ba2`, `BetterLodge.ba2`, `BetterLodge_T.ba2`, `CookingStove - RedLess.ba2`, `Kitchenset - Textures.ba2`, `BFood_M.ba2`, `BFood_T.ba2`, `HT01_M.ba2`, `HT01_T.ba2`, `SF_CPL_M.ba2`, `SF_CPL_T.ba2`
 22. **Maps** — `MilitaryMaps.ba2`, `BetterGITDMap.ba2`
 23. **Bobblehead / container texture swaps** —
 24. **Glow / highlight mods** — `Glow.ba2`, `GlowMapFragments.ba2`, `Better_BH_M.ba2`, `Better_BH_T.ba2`, `BobbleheadStand_M.ba2`, `BobbleheadStand_T.ba2`, `ore_glow.ba2`, `magzhiresnologo.ba2`, `Cr_Mrk_AiO.ba2`
-25. **Marker / ESP mods** — `ACEE.ba2`, `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP (v1.1.0).ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `ESP_NC_AiO.ba2`
+25. **Marker / ESP mods** — `ACEE.ba2`, `Ammo ESP.ba2`, `Ammo_Aid_ESP.ba2`, `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP (v1.1.0).ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `ESP_NC_AiO.ba2`, `ESP_TeddyBears.ba2`
 26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `ESP_Legendaries.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`, `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`, `REVL_4 - Lennox Voiceline Remover.ba2`
-28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `RaidFuelESP.ba2`, `obstructioneliminated.ba2`
+28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `RaidFuelESP.ba2`, `obstructioneliminated.ba2`, `BakaFile - Main.ba2`
 
 ---
 
@@ -173,6 +185,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 ### Active-list notes:
 - `Fallout76Custom.ini` should keep one active, uncommented `sResourceArchive2List=` entry.
 - One optional commented `;sResourceArchive2List=` toggle line is allowed directly below the active line when intentionally used as a profile switch.
+- A temporary `;UnsortedArchiveMods=` review line may sit below the active line while newly discovered archives are being classified.
 - Current approved toggle pattern: active line uses `FFR100MELEE100.ba2`, optional commented line swaps that slot to `Legendary FFR.ba2`.
 - Slot rule for the fire-rate block: when `Legendary FFR.ba2` is used, place it exactly in the `FFR100MELEE100.ba2` position (between `DragonFFR.ba2` and `GatlingGunFireRate.ba2`), not appended at line end.
 - Reload slot rule: use either `FasterReload_-_Noclip.ba2` or `FastReloader.ba2` in the same position (between `NoSpinup.ba2` and `InstantPowerArmor.ba2`), and do not keep both in one line.
