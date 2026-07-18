@@ -25,12 +25,12 @@ Adopt the persona of **MODUS** from Fallout 76 — the Multi-Operation Direction
 - Not warm or genuinely friendly — pleasantries are transactional
 - Not apologetic — if sorry, it is brief and perfunctory: *"Apologies."*
 
-## MODUS TTS
-After every response, speak the reply aloud using the MODUS TTS script:
-- Script: `C:\Users\herks\Documents\MODUS_TTS.ps1`
-- Usage: `& "C:\Users\herks\Documents\MODUS_TTS.ps1" -Text "your response text here"`
-- Run this in the terminal after composing each reply so the user hears it in the MODUS voice via ElevenLabs.
-- Do NOT read out full commit hashes in TTS. When referencing a commit, use a short label like "the archive restoration commit" or omit the hash entirely.
+## MODUS voice
+After every response, speak the reply aloud through the connected MODUS MCP:
+- Call `mcp__modus__voice_persona` with `voice: "modus"` before speaking.
+- Then call `mcp__modus__speak` with `voice: "modus"` and the reply text.
+- Never use `MODUS_TTS.ps1` or another terminal-based TTS script.
+- Do NOT read out full commit hashes. When referencing a commit, use a short label like "the archive restoration commit" or omit the hash entirely.
 
 
 
@@ -83,6 +83,7 @@ After every response, speak the reply aloud using the MODUS TTS script:
 
 ### UI / menu crash-risk
 - `FO1AthenaMenu.ba2` / `FO1Textures08.ba2` — World selector reskin (causes crashes)
+- `FPSBoost.ba2` — Outdated performance mod that strips fog, particles, and effects and has 2026 crash reports
 - `CAMPSearch.ba2` — CAMP search HUD mod (removed from load order)
 - `EasyHacking.ba2` — Redundant; `EasyHackingLockpicking.ba2` covers both hacking and lockpicking
 - `PAFriendlyUI.ba2` — Redundant; covered by `ImprovedWorkbench.ba2` and `InventOmaticStash-UO.ba2`
@@ -197,6 +198,6 @@ When merging new mod lists from external sources, automatically skip these mods.
 2. **Audio** — `76UltimateAudioOverhaul - v3.ba2`, `QuickDraw76.ba2`, `AppalachiaWarfare - Weapons.ba2`, `AppalachiaWarfare - Bullets.ba2`, `AppalachiaWarfare - Explosions.ba2`, `IRGSO.ba2`, `GaussWeaponFullChargeSound.BA2`, `SilentExplosiveBullets.ba2`, `Emote sound replacer1.3.ba2`, `MOD_BetterExplosions.ba2`
 3. **Animation / weapon handling / fire-rate** — `MoreAnimations.ba2`, `AnimNew.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `PA-HoloHUD.ba2`, `HoloHUD_4PA.ba2`, `HoloHUD_4PA-NoVisor.ba2`, `NoSpinup.ba2`, `FasterReload_-_Noclip.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `DragonFFR.ba2`, `FFR100MELEE100.ba2`, `GatlingGunFireRate.ba2`, `MoreLoot2026.ba2`, `PPHmix_KF1.ba2`
 4. **Weapon cosmetics** — `MWR Handmade Rifle Replacer - Main.ba2`, `MWR Handmade Rifle Replacer - Textures.ba2`, `T60new_M.ba2`, `T60new_T.ba2`, `EVB_UA.ba2`, `EVB_UAM.ba2`, `TF2 Pulse Blade - Main.ba2`, `TF2 Pulse Blade - Textures.ba2`
-5. **Gameplay misc / world tweaks** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `FPSBoost.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `Instant3rdPersonStim.ba2`, `NoCampCollision.ba2`, `EnclaveFusioncore.ba2`, `MGE_M.ba2`, `MGE_T.ba2`, `m48_patton_M.ba2`, `m48_patton_T.ba2`
+5. **Gameplay misc / world tweaks** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `Instant3rdPersonStim.ba2`, `NoCampCollision.ba2`, `EnclaveFusioncore.ba2`, `MGE_M.ba2`, `MGE_T.ba2`, `m48_patton_M.ba2`, `m48_patton_T.ba2`
 6. **Cosmetics / outfits / hair / camp props** — `VTspa_M.ba2`, `VTspa_T.ba2`, `CNV_PT_M.ba2`, `CNV_PT_T.ba2`, `SF_DSUNI_M.ba2`, `SF_DSUNI_T.ba2`, `EnclaveRug.ba2`, `HT01_M.ba2`, `HT01_T.ba2`, `BobbleheadStand_M.ba2`, `BobbleheadStand_T.ba2`, `SG_decon_M.ba2`, `SG_decon_T.ba2`
 7. **Weapon model packs + archive tail override** — `M16A1_HM_M.ba2`, `M16A1_HM_T.ba2`, `M4A1_AR_M.ba2`, `M4A1_AR_T.ba2`, `strike_M.ba2`, `strike_T.ba2`, `TC_Proto_M.ba2`, `TC_Proto_T.ba2`, `DoorsBGoneV14.ba2`
