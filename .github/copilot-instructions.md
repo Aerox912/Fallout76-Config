@@ -142,7 +142,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 - Keep section 28 (**Event / camp / map tweaks**) as the final block in active `sResourceIndexFileList` so world-removal overrides resolve last.
 
 ### sResourceIndexFileList section order (follow this when placing new mods):
-1. **Music / menu / map bootstrap** — `MIHCMenu - Music.ba2`, `TZMap.ba2`
+1. **Music / menu / map bootstrap** — `TZMap.ba2`
 2. **Texture upscale packs** — `D1_2X.ba2`, `D2_2X.ba2`, `D3_2X.ba2`, `D4_2X.ba2`, `D5_2X.ba2`, `D6_2X.ba2`, `D7_2X.ba2`, `DA1_2X.ba2`, `DA2_2X.ba2`, `DA3_2X.ba2`, `DA4_2X.ba2`, `O1_2X.ba2`
 3. **HD world/environment textures** — `76HDo_n.ba2`, `FBarSet.ba2`
 4. **Furniture / prop mesh+texture** — `DocOr_M.ba2`, `DocOr_T.ba2`, `FancyBedMsh.ba2`, `FancyBedTx.ba2`, `APC.ba2`, `APC_M.ba2`
@@ -198,6 +198,6 @@ When merging new mod lists from external sources, automatically skip these mods.
 2. **Audio** — `76UltimateAudioOverhaul - v3.ba2`, `QuickDraw76.ba2`, `AppalachiaWarfare - Weapons.ba2`, `AppalachiaWarfare - Bullets.ba2`, `AppalachiaWarfare - Explosions.ba2`, `IRGSO.ba2`, `GaussWeaponFullChargeSound.BA2`, `SilentExplosiveBullets.ba2`, `Emote sound replacer1.3.ba2`, `MOD_BetterExplosions.ba2`
 3. **Animation / weapon handling / fire-rate** — `MoreAnimations.ba2`, `AnimNew.ba2`, `PA_FastANIM.ba2`, `lowered_addon.ba2`, `HolsteredSprintHands.BA2`, `EasyFishing.ba2`, `Minigun_ReflexNull.ba2`, `PA-HoloHUD.ba2`, `HoloHUD_4PA.ba2`, `HoloHUD_4PA-NoVisor.ba2`, `NoSpinup.ba2`, `FasterReload_-_Noclip.ba2`, `InstantPowerArmor.ba2`, `InstaCore.ba2`, `DragonFFR.ba2`, `FFR100MELEE100.ba2`, `GatlingGunFireRate.ba2`, `MoreLoot2026.ba2`, `PPHmix_KF1.ba2`
 4. **Weapon cosmetics** — `MWR Handmade Rifle Replacer - Main.ba2`, `MWR Handmade Rifle Replacer - Textures.ba2`, `T60new_M.ba2`, `T60new_T.ba2`, `EVB_UA.ba2`, `EVB_UAM.ba2`, `TF2 Pulse Blade - Main.ba2`, `TF2 Pulse Blade - Textures.ba2`
-5. **Gameplay misc / world tweaks** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `Instant3rdPersonStim.ba2`, `NoCampCollision.ba2`, `EnclaveFusioncore.ba2`, `MGE_M.ba2`, `MGE_T.ba2`, `m48_patton_M.ba2`, `m48_patton_T.ba2`
+5. **Gameplay misc / world tweaks** — `InvisiWoodPiles.ba2`, `WS_Term.ba2`, `More-Vibrancy.ba2`, `nucleus.ba2`, `Instant3rdPersonStim.ba2`, `VendorFinderMOTHMAN.ba2`, `NoCampCollision.ba2`, `EnclaveFusioncore.ba2`, `MGE_M.ba2`, `MGE_T.ba2`, `m48_patton_M.ba2`, `m48_patton_T.ba2`
 6. **Cosmetics / outfits / hair / camp props** — `VTspa_M.ba2`, `VTspa_T.ba2`, `CNV_PT_M.ba2`, `CNV_PT_T.ba2`, `SF_DSUNI_M.ba2`, `SF_DSUNI_T.ba2`, `EnclaveRug.ba2`, `HT01_M.ba2`, `HT01_T.ba2`, `BobbleheadStand_M.ba2`, `BobbleheadStand_T.ba2`, `SG_decon_M.ba2`, `SG_decon_T.ba2`
 7. **Weapon model packs** — `M16A1_HM_M.ba2`, `M16A1_HM_T.ba2`, `M4A1_AR_M.ba2`, `M4A1_AR_T.ba2`, `strike_M.ba2`, `strike_T.ba2`, `TC_Proto_M.ba2`, `TC_Proto_T.ba2`
