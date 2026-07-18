@@ -43,6 +43,16 @@ After every response, speak the reply aloud using the MODUS TTS script:
 ## Excluded Mods (Blacklist)
 **Never include these mods in any load order configuration:**
 
+### Potato-profile texture upscales
+- `D1_2X.ba2` / `D2_2X.ba2` / `D3_2X.ba2` / `D4_2X.ba2` / `D5_2X.ba2` / `D6_2X.ba2` / `D7_2X.ba2` — Broad 2x texture packs
+- `DA1_2X.ba2` / `DA2_2X.ba2` / `DA3_2X.ba2` / `DA4_2X.ba2` / `O1_2X.ba2` — Additional 2x texture packs
+- `2xArmorClothing.ba2` / `2xPowerArmor.ba2` / `2xWeapons.ba2` — Equipment texture upscales
+- `FLORANIM_T-2K.ba2` / `USBQ_BrighterWings4K.ba2` — Flora and creature texture upscales
+- `76HDo_n.ba2` / `FBarSet.ba2` — HD world textures
+- `DocOr_M.ba2` / `DocOr_T.ba2` / `FancyBedMsh.ba2` / `FancyBedTx.ba2` / `APC.ba2` / `APC_M.ba2` — Furniture and prop cosmetics
+- `FGB_AiO_M.ba2` / `FGB_AiO_T.ba2` / `Fake_Glass_Begone_Dpl_M.ba2` / `FTB_M.ba2` / `FTB_T.ba2` / `NO Scum - Main.ba2` / `NO Scum - Textures.ba2` — World cosmetic overhauls
+- `Br_Rev_M.ba2` / `Br_Rev_T.ba2` / `Br_Rev_Wood.ba2` / `GH_Rev_M.ba2` / `GH_Rev_T.ba2` / `OM_Rev_M.ba2` / `OM_Rev_T.ba2` / `GH_Glass_M.ba2` / `GH_Glass_T.ba2` — Architecture revamps
+
 ### Audio / sound replacers
 - `WYFT.ba2` — Audio mod (unwanted)
 - `SMTM Pick Me Up.ba2` — Audio mod (unwanted)
