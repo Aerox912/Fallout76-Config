@@ -169,7 +169,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 25. **Marker / ESP mods** — `ACEE.ba2`, `Ammo ESP.ba2`, `Ammo_Aid_ESP.ba2`, `BH_Marker.ba2`, `Cs_Marker.ba2`, `Mag_Marker.ba2`, `PIE - Pitt Items ESP (v1.1.0).ba2`, `Pl_Marker.ba2`, `Rec_Marker.ba2`, `SB_Mrk.ba2`, `ESP_NC_AiO.ba2`, `ESP_TeddyBears.ba2`
 26. **Gameplay tweaks** — `nowait-dop.ba2`, `nowait-expo.ba2`, `InstantStimpak.ba2`, `ESP_Legendaries.ba2`, `LandWithYourKnees.ba2`, `Guardian is not based.ba2`
 27. **Voiceline / audio removers** — `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`, `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`, `REVL_4 - Lennox Voiceline Remover.ba2`
-28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `Drill_Skip.ba2`, `EnclaveFusioncore.ba2`, `RaidFuelESP.ba2`, `obstructioneliminated.ba2`, `BakaFile - Main.ba2`
+28. **Event / camp / map tweaks** — `NoSiloElevatorHatch.ba2`, `EnclaveFusioncore.ba2`, `RaidFuelESP.ba2`, `obstructioneliminated.ba2`
 
 ---
 
@@ -181,7 +181,7 @@ When merging new mod lists from external sources, automatically skip these mods.
 - If `ChatMod.ba2` is present, it stays immediately after `HUDModLoader.ba2` and is treated as a post-loader chat overlay entry rather than part of the core HUD framework ordering.
 - When adding **HUD mods** (section 1), always insert them **before** `HUDModLoader.ba2`.
 - When adding **non-HUD mods** (sections 2–7), insert them in their appropriate section regardless of `ChatMod.ba2` — the ChatMod rule only governs the HUD section.
-- Keep `DoorsBGoneV14.ba2` as the first entry in active `sResourceArchive2List` so long archive lines cannot prevent it from loading.
+- Keep `DoorsBGoneV14.ba2`, `BakaFile - Main.ba2`, and `Drill_Skip.ba2` as the first three entries in active `sResourceArchive2List` so long archive lines cannot prevent them from loading.
 
 ### Active-list notes:
 - `Fallout76Custom.ini` should keep one active, uncommented `sResourceArchive2List=` entry.
