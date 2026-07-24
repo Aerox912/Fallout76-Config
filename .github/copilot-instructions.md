@@ -132,8 +132,53 @@ When merging new mod lists from external sources, automatically skip these mods.
 - Treat decorative sci-fi furniture, camp props, and one-off cosmetic outfit packs as blacklist candidates unless explicitly requested.
 - If a mod only appears in legacy notes or older backups (and not in the active list), prefer keeping it excluded unless the member asks to restore it.
 
+## Hardware performance profiles
+
+Some branches target a specific machine. The archive removals and settings below are **scoped to their branch**, not global blacklist entries. Do not apply them to other branches, and do not re-add the removed archives when merging an external mod list into a low-VRAM branch.
+
+### `super-potato` — 4 GB VRAM laptop (RTX 3050 Ti, Surface Laptop Studio)
+
+Applied 2026-07-24 to address severe intermittent frame spikes. Cause: VRAM overcommit. The 2x texture packs are built for 8–12 GB cards, so on 4 GB the working set does not fit and the driver evicts and re-uploads textures over PCIe whenever new assets stream in.
+
+**Removed from `sResourceIndexFileList`** (about 87 GB of 2x-resolution textures, 262 entries down to 247):
+- Section 2 upscale packs — `D1_2X.ba2` through `D7_2X.ba2`, `DA1_2X.ba2` through `DA4_2X.ba2`. `O1_2X.ba2` (78 MB) is retained.
+- Section 3 — `76HDo_n.ba2` (10.4 GB)
+- Section 9 — `2xArmorClothing.ba2` (15.2 GB), `2xPowerArmor.ba2` (13.2 GB)
+- Section 10 — `2xWeapons.ba2` (11.2 GB)
+
+`4x Workstations.ba2` (1.2 GB) and `Quality CubeMaps - HD Cube Maps.ba2` (76 MB) are retained. All removed `.ba2` files remain on disk, so this is config-only and reversible.
+
+**Settings changed:**
+
+| File | Setting | Was | Now |
+|---|---|---|---|
+| `Fallout76Custom.ini` | `[General] iTextureMemoryUpperBound` | `4294967296` | `2684354560` |
+| `Fallout76Custom.ini` | `[Display]` and `[vsync]` `iPresentInterval` | `0` | `1` |
+| `Fallout76Custom.ini` | `[NVHBAO] bEnable` | `1` | `0` |
+| `Fallout76Prefs.ini` | `[Display] fShadowDistance` and `fDirShadowDistance` | `90000.0000` | `10000.0000` |
+| `Fallout76Prefs.ini` | `[Display] iPresentInterval` | `0` | `1` |
+| `Fallout76.ini` | `[Display] iPresentInterval` | `0` | `1` |
+| `Fallout76.ini` | `[Audio] uiAudioHWThread` | `6` | `3` |
+
+Rationale worth preserving:
+- `iTextureMemoryUpperBound` is expressed in bytes (its neighbour `iTextureUpdateThreshold=16777216` is 16 MiB). The old value was the entire 4 GB of VRAM budgeted to textures alone, leaving no headroom for render targets, shadow maps, or the framebuffer. The new value is 2.5 GiB.
+- Ambient occlusion: SAO is the chosen method here. `bSAOEnable=1` stays in both `Fallout76Prefs.ini` and `Fallout76Custom.ini`, and NVHBAO is off so only one AO pass runs. Do not re-enable NVHBAO alongside SAO.
+- Screen space reflections are deliberately left on (`bScreenSpaceReflections=1` in `Fallout76Prefs.ini` and `Fallout76.ini`) despite the GPU cost.
+- `fShadowDistance=90000` far exceeds vanilla ultra (roughly 20000–30000) and expands the shadow-caster cull set enough to spike the CPU in towns and events.
+- `uiAudioHWThread=3` suits the 4-core / 8-thread i7-11370H. Thread 6 is a hyperthread sibling that contends with the render thread.
+- `iPresentInterval=1` caps to the display refresh, which is 120 Hz on this panel. If power-limit throttling still causes spikes, add an explicit 60 FPS cap in the Nvidia Control Panel rather than changing the INI again.
+
+Known but not acted on, for anyone revisiting this branch:
+- `Fallout76.ini` declares `iSize W=3440` / `iSize H=1440` while `Fallout76Prefs.ini` declares `2048x1152`. Prefs normally wins; left inconsistent.
+- Scaleform HUD mods (`HUDPlayerList.ba2`, `SimpleDPS.ba2`, `XpHUD.ba2`, `BuffsMeter.ba2`) run Flash on the main thread and are a known hitch source. Untested here.
+- ReShade hooks via both `d3d11.dll` and `dxgi.dll` in the game folder. Untested here.
+- The config directory lives under `Documents`, which OneDrive syncs by default on Surface devices while the game writes to it.
+
+---
+
 ## sResourceIndexFileList ordering rules
 - When adding new mods to `sResourceIndexFileList`, append them to the appropriate section.
+- Sections 2, 3, 9, and 10 are intentionally pruned on low-VRAM branches. Check **Hardware performance profiles** before re-adding texture upscale packs to a branch that omits them.
 - The category sequence below mirrors `Fallout76Custom reference.ini`.
 - If a mod is not present in the reference list, keep it with the nearest matching category block (do not create ad-hoc out-of-order clusters).
 - Blacklist rules still apply even if a blacklisted archive appears in the reference file.
