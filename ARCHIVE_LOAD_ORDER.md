@@ -1,13 +1,13 @@
 # Fallout 76 archive load-order reference
 
-Captured from the approved `Fallout76Custom.ini` on 2026-10-10. The complete baseline contains **244 archives**: 177 in `sResourceIndexFileList` and 67 in `sResourceArchive2List`.
+Captured from the approved `Fallout76Custom.ini` on 2026-10-10. The complete baseline contains **255 archives**: 183 in `sResourceIndexFileList` and 72 in `sResourceArchive2List`.
 
 [`archive-load-order.json`](archive-load-order.json) is the authoritative categorized baseline for rebuilding. This Markdown file is its readable view. [`AGENTS.md`](AGENTS.md) supplies the current blacklist, approval rules, and Vortex ownership instructions.
 
 ## Rebuild rules
 
 - Preserve both list membership and the order of categories and filenames within each list. Similar mods may appear in several places because this reference preserves the user's existing order.
-- In `sResourceArchive2List`, keep all five initial UI/HUD categories before `HUDModLoader.ba2`. In this snapshot they contain 29 archives and the loader is entry 30. Insert new HUD Mod Loader widgets before the loader, preserving the existing entries' relative order.
+- In `sResourceArchive2List`, keep all five initial UI/HUD categories before `HUDModLoader.ba2`. In this snapshot they contain 31 archives and the loader is entry 32. Insert new HUD Mod Loader widgets before the loader, preserving the existing entries' relative order.
 - The loader is not the final entry of the entire Archive2 list. Keep the following audio, animation, asset, and gameplay groups in their stored order. `DoorsBGoneV14.ba2` stays last.
 - Keep mesh/texture companions together in their existing order. Do not alphabetize, merge categories by theme, or move archives between INI keys during a rebuild.
 - Apply the current exact-filename blacklist and explicit user decisions in `AGENTS.md`. Ask before any unapproved replacement or removal.
@@ -24,7 +24,7 @@ In particular, `HoloHUD_4PA.ba2` contains dashboard/rain-effect meshes and textu
 
 ## sResourceIndexFileList
 
-177 archives in 27 ordered categories.
+183 archives in 27 ordered categories.
 
 ### 1. Menu music and map
 
@@ -300,7 +300,7 @@ Positions 148-149.
 
 ### 24. Glow, collectible markers and ESP
 
-Positions 150-167.
+Positions 150-171.
 
 Glowing Scorched.ba2 is explicitly allowed by the user.
 
@@ -322,26 +322,34 @@ Glowing Scorched.ba2 is explicitly allowed by the user.
 - `fuel_ESP.ba2`
 - `ESP_TeddyBears.ba2`
 - `150Abraxo.ba2`
+- `Ammo_Aid_ESP.ba2`
+- `bug_cans.ba2`
+- `ESP_Daily_Foods_Items.ba2`
+- `PintSizeMaskESPV1.ba2`
 
 ### 25. Gameplay, legendary visibility and raid geometry
 
-Positions 168-170.
+Positions 172-175.
 
 - `InstantStimpak.ba2`
 - `ESP_Legendaries.ba2`
 - `NoGuardianBase.ba2`
+- `obstructioneliminated.ba2`
 
 ### 26. Expedition voiceline removal
 
-Positions 171-173.
+Positions 176-179.
 
-- `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`
-- `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`
-- `REVL_4 - Lennox Voiceline Remover.ba2`
+Only the four individual expedition variants 5-8 are approved. REVL variants 1-4, 9, and 10 are blacklisted in AGENTS.md.
+
+- `REVL_5 - The Pitt (Union Dues) Characters Voiceline Remover.ba2`
+- `REVL_6 - The Pitt (Ashes to Fire) Characters Voiceline Remover.ba2`
+- `REVL_7 - Atlantic City (Tax Evasion) Characters Voiceline Remover.ba2`
+- `REVL_8 - Atlantic City (The Most Sensational Game) Characters Voiceline Remover.ba2`
 
 ### 27. Silo and raid geometry, fusion-core charger and saloon doors
 
-Positions 174-177.
+Positions 180-183.
 
 Preserve this final IndexFileList block and its current internal order.
 
@@ -352,21 +360,25 @@ Preserve this final IndexFileList block and its current internal order.
 
 ## sResourceArchive2List
 
-67 archives in 17 ordered categories.
+72 archives in 18 ordered categories.
 
 ### 1. HUD editing, building and interaction UI
 
-Positions 1-5. **Must remain before HUDModLoader.ba2.**
+Positions 1-7. **Must remain before HUDModLoader.ba2.**
+
+CampVisitorsFix contains interface/campbuilds.swf; EasyFishing contains interface/fishingmenu.swf. Keep both in this UI group before HUDModLoader.
 
 - `HUDEditor_IHUD.ba2`
 - `CampBudgetAndBuildingCosts.ba2`
+- `CampVisitorsFix.ba2`
 - `FastTerminals.ba2`
 - `EasyHackingLockpicking.ba2`
+- `EasyFishing.ba2`
 - `QuickBoyX1.0SC.ba2`
 
 ### 2. HUD status, players, challenges and perk loadouts
 
-Positions 6-9. **Must remain before HUDModLoader.ba2.**
+Positions 8-11. **Must remain before HUDModLoader.ba2.**
 
 - `HUDCondition.ba2`
 - `HUDPlayerList.ba2`
@@ -375,7 +387,7 @@ Positions 6-9. **Must remain before HUDModLoader.ba2.**
 
 ### 3. Inventory, Pip-Boy, scopes and loading screens
 
-Positions 10-14. **Must remain before HUDModLoader.ba2.**
+Positions 12-16. **Must remain before HUDModLoader.ba2.**
 
 - `ImprovedPipboyStats.ba2`
 - `BetterInventory-UO.ba2`
@@ -385,7 +397,7 @@ Positions 10-14. **Must remain before HUDModLoader.ba2.**
 
 ### 4. VATS, health, XP, loadouts, workbench and damage UI
 
-Positions 15-22. **Must remain before HUDModLoader.ba2.**
+Positions 17-24. **Must remain before HUDModLoader.ba2.**
 
 - `VATSPriority.ba2`
 - `ImprovedHBS21.ba2`
@@ -398,7 +410,7 @@ Positions 15-22. **Must remain before HUDModLoader.ba2.**
 
 ### 5. Dialogue, UI speed, targeting, perks and seasons
 
-Positions 23-29. **Must remain before HUDModLoader.ba2.**
+Positions 25-31. **Must remain before HUDModLoader.ba2.**
 
 CC.ba2 is VaultgirlLegendaryPerks and contains interface/legendaryperkslibrary.swf.
 
@@ -412,7 +424,7 @@ CC.ba2 is VaultgirlLegendaryPerks and contains interface/legendaryperkslibrary.s
 
 ### 6. HUD Mod Loader
 
-Positions 30.
+Positions 32.
 
 All five preceding UI/HUD groups must remain before this loader. It is not the last archive in the whole list.
 
@@ -420,13 +432,13 @@ All five preceding UI/HUD groups must remain before this loader. It is not the l
 
 ### 7. Audio overhaul
 
-Positions 31.
+Positions 33.
 
 - `76UltimateAudioOverhaul - v3.ba2`
 
 ### 8. Weapon draw animation
 
-Positions 32.
+Positions 34.
 
 QuickDraw76 contains a first-person gunbehavior.hkx. Preserve its current position between the audio overhaul and the following audio/effects group.
 
@@ -434,7 +446,7 @@ QuickDraw76 contains a first-person gunbehavior.hkx. Preserve its current positi
 
 ### 9. Weapon, explosion and emote audio and effects
 
-Positions 33-39.
+Positions 35-41.
 
 - `AppalachiaWarfare - Weapons.ba2`
 - `AppalachiaWarfare - Bullets.ba2`
@@ -446,17 +458,18 @@ Positions 33-39.
 
 ### 10. Player and power armor animations
 
-Positions 40-44.
+Positions 42-47.
 
 - `MoreAnimations.ba2`
 - `AnimNew.ba2`
 - `PA_FastANIM.ba2`
 - `lowered_addon.ba2`
 - `HolsteredSprintHands.BA2`
+- `LandWithYourKnees.ba2`
 
 ### 11. Weapon sight and power armor dashboard assets
 
-Positions 45-46.
+Positions 48-49.
 
 HoloHUD_4PA.ba2 was inspected: it contains dashboard/rain-effect meshes and textures, with no SWF files. Preserve this asset-only add-on after HUDModLoader; do not classify it as an HML widget merely from its name.
 
@@ -465,18 +478,21 @@ HoloHUD_4PA.ba2 was inspected: it contains dashboard/rain-effect meshes and text
 
 ### 12. Weapon timing and power armor entry tweaks
 
-Positions 47-52.
+Positions 50-56.
+
+FasterFirerate_2.0.ba2 is the approved replacement for the blacklisted GammaGunFFR.ba2 and GatlingGunFireRate.ba2. Keep InstantReloads5.ba2 immediately after FasterFirerate as the dedicated reload archive. FFR200MELEE300.ba2 remains enabled as the approved replacement for FFR100MELEE100.ba2. FastPlasmaCaster.ba2 is explicitly allowed.
 
 - `NoSpinup5.ba2`
+- `FasterFirerate_2.0.ba2`
 - `InstantReloads5.ba2`
 - `InstantPowerArmor.ba2`
 - `DragonFFR.ba2`
 - `FFR200MELEE300.ba2`
-- `GatlingGunFireRate.ba2`
+- `FastPlasmaCaster.ba2`
 
 ### 13. Skeleton and underarmor
 
-Positions 53-55.
+Positions 57-59.
 
 PPHmix_KF1 contains first- and third-person skeleton meshes (Knee Fix and Pip-Boy Headlight).
 
@@ -486,7 +502,7 @@ PPHmix_KF1 contains first- and third-person skeleton meshes (Knee Fix and Pip-Bo
 
 ### 14. Wood pile visibility and color grading
 
-Positions 56-59.
+Positions 60-63.
 
 nucleus.ba2 was inspected and contains color-grading LUT textures.
 
@@ -495,9 +511,17 @@ nucleus.ba2 was inspected and contains color-grading LUT textures.
 - `More-Vibrancy.ba2`
 - `nucleus.ba2`
 
-### 15. Spa furniture and hairstyles
+### 15. Stealth visibility shaders
 
-Positions 60-65.
+Positions 64.
+
+User-requested Custom INI reference for the Visible Stealth Field - White archive deployed by Vortex. The base INI also references this game-named shader archive; leave its deployment to Vortex.
+
+- `SeventySix - Shaders.ba2`
+
+### 16. Spa furniture and hairstyles
+
+Positions 65-70.
 
 - `VTspa_M.ba2`
 - `VTspa_T.ba2`
@@ -506,17 +530,17 @@ Positions 60-65.
 - `SF_DSUNI_M.ba2`
 - `SF_DSUNI_T.ba2`
 
-### 16. Marker effect removal
+### 17. Marker effect removal
 
-Positions 66.
+Positions 71.
 
 BM_Invisible contains a detect-life shader-particle mesh.
 
 - `BM_Invisible.ba2`
 
-### 17. Door-removal override
+### 18. Door-removal override
 
-Positions 67.
+Positions 72.
 
 DoorsBGoneV14.ba2 remains the final entry.
 
@@ -524,6 +548,6 @@ DoorsBGoneV14.ba2 remains the final entry.
 
 ## Snapshot integrity
 
-Source INI SHA-256 at capture: `B72D76E9A9E1349F8F6910558B02B1AA12C3AC991BD761DF7F0906BE961D287C`.
+Source INI SHA-256 at capture: `CA6AFF2F8E18D1DF613DD1F1E16BC820801152C91FF7D3AB041DB1463235C2B3`.
 
-The flattened JSON list values were checked against the source INI in exact order. The live INI and Data were not modified while preparing this reference.
+The flattened JSON list values were checked against the updated source INI in exact order. The INI and this reference reflect the approved archive changes; Data deployment remains managed by Vortex.

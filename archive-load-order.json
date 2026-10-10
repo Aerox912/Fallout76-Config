@@ -3,7 +3,7 @@
   "capturedOn": "2026-10-10",
   "source": {
     "file": "Fallout76Custom.ini",
-    "sha256": "B72D76E9A9E1349F8F6910558B02B1AA12C3AC991BD761DF7F0906BE961D287C"
+    "sha256": "CA6AFF2F8E18D1DF613DD1F1E16BC820801152C91FF7D3AB041DB1463235C2B3"
   },
   "description": "Approved archive ordering baseline. Flatten categories and archives in their stored order; do not sort or regroup by filename.",
   "archiveSettings": {
@@ -348,7 +348,11 @@
             "ESP_VendorOutline.ba2",
             "fuel_ESP.ba2",
             "ESP_TeddyBears.ba2",
-            "150Abraxo.ba2"
+            "150Abraxo.ba2",
+            "Ammo_Aid_ESP.ba2",
+            "bug_cans.ba2",
+            "ESP_Daily_Foods_Items.ba2",
+            "PintSizeMaskESPV1.ba2"
           ],
           "notes": "Glowing Scorched.ba2 is explicitly allowed by the user."
         },
@@ -358,17 +362,20 @@
           "archives": [
             "InstantStimpak.ba2",
             "ESP_Legendaries.ba2",
-            "NoGuardianBase.ba2"
+            "NoGuardianBase.ba2",
+            "obstructioneliminated.ba2"
           ]
         },
         {
           "id": "voiceline-removal",
           "category": "Expedition voiceline removal",
           "archives": [
-            "REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2",
-            "REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2",
-            "REVL_4 - Lennox Voiceline Remover.ba2"
-          ]
+            "REVL_5 - The Pitt (Union Dues) Characters Voiceline Remover.ba2",
+            "REVL_6 - The Pitt (Ashes to Fire) Characters Voiceline Remover.ba2",
+            "REVL_7 - Atlantic City (Tax Evasion) Characters Voiceline Remover.ba2",
+            "REVL_8 - Atlantic City (The Most Sensational Game) Characters Voiceline Remover.ba2"
+          ],
+          "notes": "Only the four individual expedition variants 5-8 are approved. REVL variants 1-4, 9, and 10 are blacklisted in AGENTS.md."
         },
         {
           "id": "world-interaction-tail",
@@ -392,11 +399,14 @@
           "archives": [
             "HUDEditor_IHUD.ba2",
             "CampBudgetAndBuildingCosts.ba2",
+            "CampVisitorsFix.ba2",
             "FastTerminals.ba2",
             "EasyHackingLockpicking.ba2",
+            "EasyFishing.ba2",
             "QuickBoyX1.0SC.ba2"
           ],
-          "mustPrecedeHudModLoader": true
+          "mustPrecedeHudModLoader": true,
+          "notes": "CampVisitorsFix contains interface/campbuilds.swf; EasyFishing contains interface/fishingmenu.swf. Keep both in this UI group before HUDModLoader."
         },
         {
           "id": "hud-status-loadouts",
@@ -495,7 +505,8 @@
             "AnimNew.ba2",
             "PA_FastANIM.ba2",
             "lowered_addon.ba2",
-            "HolsteredSprintHands.BA2"
+            "HolsteredSprintHands.BA2",
+            "LandWithYourKnees.ba2"
           ]
         },
         {
@@ -512,12 +523,14 @@
           "category": "Weapon timing and power armor entry tweaks",
           "archives": [
             "NoSpinup5.ba2",
+            "FasterFirerate_2.0.ba2",
             "InstantReloads5.ba2",
             "InstantPowerArmor.ba2",
             "DragonFFR.ba2",
             "FFR200MELEE300.ba2",
-            "GatlingGunFireRate.ba2"
-          ]
+            "FastPlasmaCaster.ba2"
+          ],
+          "notes": "FasterFirerate_2.0.ba2 is the approved replacement for the blacklisted GammaGunFFR.ba2 and GatlingGunFireRate.ba2. Keep InstantReloads5.ba2 immediately after FasterFirerate as the dedicated reload archive. FFR200MELEE300.ba2 remains enabled as the approved replacement for FFR100MELEE100.ba2. FastPlasmaCaster.ba2 is explicitly allowed."
         },
         {
           "id": "skeleton-underarmor",
@@ -539,6 +552,14 @@
             "nucleus.ba2"
           ],
           "notes": "nucleus.ba2 was inspected and contains color-grading LUT textures."
+        },
+        {
+          "id": "stealth-visibility-shaders",
+          "category": "Stealth visibility shaders",
+          "archives": [
+            "SeventySix - Shaders.ba2"
+          ],
+          "notes": "User-requested Custom INI reference for the Visible Stealth Field - White archive deployed by Vortex. The base INI also references this game-named shader archive; leave its deployment to Vortex."
         },
         {
           "id": "spa-hairstyles",
