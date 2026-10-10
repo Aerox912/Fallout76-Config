@@ -364,9 +364,9 @@ Preserve this final IndexFileList block and its current internal order.
 
 ### 1. HUD editing, building and interaction UI
 
-Positions 1-7. **Must remain before HUDModLoader.ba2.**
+Positions 1-8. **Must remain before HUDModLoader.ba2.**
 
-CampVisitorsFix contains interface/campbuilds.swf; EasyFishing contains interface/fishingmenu.swf. Keep both in this UI group before HUDModLoader.
+CampVisitorsFix contains interface/campbuilds.swf; EasyFishing contains interface/fishingmenu.swf. Keep both in this UI group before HUDModLoader. Keep Ultrawide76_QuickBoy.ba2 immediately after QuickBoyX1.0SC.ba2 as the user-approved override; both remain before HUDModLoader. The centered Ultrawide variant is blacklisted.
 
 - `HUDEditor_IHUD.ba2`
 - `CampBudgetAndBuildingCosts.ba2`
@@ -375,10 +375,11 @@ CampVisitorsFix contains interface/campbuilds.swf; EasyFishing contains interfac
 - `EasyHackingLockpicking.ba2`
 - `EasyFishing.ba2`
 - `QuickBoyX1.0SC.ba2`
+- `Ultrawide76_QuickBoy.ba2`
 
 ### 2. HUD status, players, challenges and perk loadouts
 
-Positions 8-11. **Must remain before HUDModLoader.ba2.**
+Positions 9-12. **Must remain before HUDModLoader.ba2.**
 
 - `HUDCondition.ba2`
 - `HUDPlayerList.ba2`
@@ -387,7 +388,7 @@ Positions 8-11. **Must remain before HUDModLoader.ba2.**
 
 ### 3. Inventory, Pip-Boy, scopes and loading screens
 
-Positions 12-17. **Must remain before HUDModLoader.ba2.**
+Positions 13-18. **Must remain before HUDModLoader.ba2.**
 
 - `ImprovedPipboyStats.ba2`
 - `BetterInventory-UO.ba2`
@@ -396,13 +397,12 @@ Positions 12-17. **Must remain before HUDModLoader.ba2.**
 - `ModernScopes.ba2`
 - `loadingScreenOverhaul_smaller_v0.2.ba2`
 
-### 4. VATS, health, XP, loadouts, workbench and damage UI
+### 4. VATS, health, loadouts, workbench and damage UI
 
-Positions 18-25. **Must remain before HUDModLoader.ba2.**
+Positions 19-25. **Must remain before HUDModLoader.ba2.**
 
 - `VATSPriority.ba2`
 - `ImprovedHBS21.ba2`
-- `XpHUD.ba2`
 - `LoadoutWarn.ba2`
 - `sVATS.ba2`
 - `SkipMessagesConfigurable.ba2`
@@ -549,6 +549,6 @@ DoorsBGoneV14.ba2 remains the final entry.
 
 ## Snapshot integrity
 
-Source INI SHA-256 at capture: `C48F4AC8DBAD0C90C4EF179ACD333FB7927DABD09BC61144A96E804F2F93D7B9`.
+Source INI SHA-256 at capture: `5EE214FDEAF058C19B218AECE51EABDC6A018861EE9223D9DDF21D983E61CD8F`.
 
 The flattened JSON list values were checked against the updated source INI in exact order. The INI and this reference reflect the approved archive changes; Data deployment remains managed by Vortex.

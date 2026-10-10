@@ -15,6 +15,9 @@ These instructions apply when rebuilding or updating `[Archive]` in
   `HUDModLoader.ba2` in `sResourceArchive2List`. Insert new HUD Mod Loader
   widgets before the loader and preserve the relative order of existing mods.
   The loader does not have to be the final archive in the entire list.
+- Keep `Ultrawide76_QuickBoy.ba2` immediately after `QuickBoyX1.0SC.ba2`
+  in `sResourceArchive2List` as the approved override. Keep both before
+  `HUDModLoader.ba2`; the centered Ultrawide variant is blacklisted.
 - Preserve the later asset/audio/gameplay blocks. `HoloHUD_4PA.ba2` is a
   dashboard/rain-effect mesh and texture add-on, so keep its saved position
   after the loader. Keep `DoorsBGoneV14.ba2` last in `sResourceArchive2List`.
@@ -59,7 +62,9 @@ The current user decisions allow `Glowing Scorched.ba2` and
 `FastPlasmaCaster.ba2`, and blacklist REVL variants 1, 2, 3, 4, 9, and 10.
 `GammaGunFFR.ba2` and `GatlingGunFireRate.ba2` are also blacklisted after their
 approved replacement by `FasterFirerate_2.0.ba2`.
-The 15 entries below are the current blacklist for future archive-section
+`Ultrawide76_QuickBoyCentered.ba2` is blacklisted in favor of the approved
+ultrawide QuickBoy override.
+The 16 entries below are the current blacklist for future archive-section
 rebuilds; do not restore removed entries from old instructions or backups.
 
 - `InstantReloads.ba2`
@@ -71,6 +76,7 @@ rebuilds; do not restore removed entries from old instructions or backups.
 - `EarleNoWalls.ba2`
 - `GammaGunFFR.ba2`
 - `GatlingGunFireRate.ba2`
+- `Ultrawide76_QuickBoyCentered.ba2`
 - `REVL_1 - Remove All.ba2`
 - `REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2`
 - `REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2`

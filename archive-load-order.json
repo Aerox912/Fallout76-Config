@@ -3,7 +3,7 @@
   "capturedOn": "2026-10-10",
   "source": {
     "file": "Fallout76Custom.ini",
-    "sha256": "C48F4AC8DBAD0C90C4EF179ACD333FB7927DABD09BC61144A96E804F2F93D7B9"
+    "sha256": "5EE214FDEAF058C19B218AECE51EABDC6A018861EE9223D9DDF21D983E61CD8F"
   },
   "description": "Approved archive ordering baseline. Flatten categories and archives in their stored order; do not sort or regroup by filename.",
   "archiveSettings": {
@@ -403,10 +403,11 @@
             "FastTerminals.ba2",
             "EasyHackingLockpicking.ba2",
             "EasyFishing.ba2",
-            "QuickBoyX1.0SC.ba2"
+            "QuickBoyX1.0SC.ba2",
+            "Ultrawide76_QuickBoy.ba2"
           ],
           "mustPrecedeHudModLoader": true,
-          "notes": "CampVisitorsFix contains interface/campbuilds.swf; EasyFishing contains interface/fishingmenu.swf. Keep both in this UI group before HUDModLoader."
+          "notes": "CampVisitorsFix contains interface/campbuilds.swf; EasyFishing contains interface/fishingmenu.swf. Keep both in this UI group before HUDModLoader. Keep Ultrawide76_QuickBoy.ba2 immediately after QuickBoyX1.0SC.ba2 as the user-approved override; both remain before HUDModLoader. The centered Ultrawide variant is blacklisted."
         },
         {
           "id": "hud-status-loadouts",
@@ -434,11 +435,10 @@
         },
         {
           "id": "hud-vats-stats-workbench",
-          "category": "VATS, health, XP, loadouts, workbench and damage UI",
+          "category": "VATS, health, loadouts, workbench and damage UI",
           "archives": [
             "VATSPriority.ba2",
             "ImprovedHBS21.ba2",
-            "XpHUD.ba2",
             "LoadoutWarn.ba2",
             "sVATS.ba2",
             "SkipMessagesConfigurable.ba2",
