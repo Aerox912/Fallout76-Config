@@ -3,7 +3,7 @@
   "capturedOn": "2026-10-10",
   "source": {
     "file": "Fallout76Custom.ini",
-    "sha256": "CA6AFF2F8E18D1DF613DD1F1E16BC820801152C91FF7D3AB041DB1463235C2B3"
+    "sha256": "C48F4AC8DBAD0C90C4EF179ACD333FB7927DABD09BC61144A96E804F2F93D7B9"
   },
   "description": "Approved archive ordering baseline. Flatten categories and archives in their stored order; do not sort or regroup by filename.",
   "archiveSettings": {
@@ -426,6 +426,7 @@
             "ImprovedPipboyStats.ba2",
             "BetterInventory-UO.ba2",
             "InventOmaticStash-UO.ba2",
+            "LootExcluder.ba2",
             "ModernScopes.ba2",
             "loadingScreenOverhaul_smaller_v0.2.ba2"
           ],
