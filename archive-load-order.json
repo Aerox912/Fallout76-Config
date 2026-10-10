@@ -1,0 +1,574 @@
+{
+  "schemaVersion": 1,
+  "capturedOn": "2026-10-10",
+  "source": {
+    "file": "Fallout76Custom.ini",
+    "sha256": "B72D76E9A9E1349F8F6910558B02B1AA12C3AC991BD761DF7F0906BE961D287C"
+  },
+  "description": "Approved archive ordering baseline. Flatten categories and archives in their stored order; do not sort or regroup by filename.",
+  "archiveSettings": {
+    "bInvalidateOlderFiles": "1",
+    "sResourceDataDirsFinal": "STRINGS\\"
+  },
+  "orderingRules": {
+    "preserveListMembership": true,
+    "preserveCategoryAndArchiveOrder": true,
+    "hudLoader": {
+      "list": "sResourceArchive2List",
+      "archive": "HUDModLoader.ba2",
+      "requiredPrecedingCategoryIds": [
+        "ui-interaction",
+        "hud-status-loadouts",
+        "inventory-scopes-loading",
+        "hud-vats-stats-workbench",
+        "ui-targeting-perks-seasons"
+      ],
+      "newHudMods": "Insert HUD Mod Loader widgets before HUDModLoader.ba2, preserving the relative order of existing entries."
+    },
+    "lastArchive": {
+      "sResourceArchive2List": "DoorsBGoneV14.ba2"
+    },
+    "deployment": "Vortex owns Data. Missing files must be reported, not restored directly or silently dropped from this approved baseline.",
+    "blacklist": "Apply the current exact-filename blacklist and user approvals from AGENTS.md.",
+    "maintenance": "Update this JSON and regenerate ARCHIVE_LOAD_ORDER.md only after an intentional, user-approved load-order change. Do not overwrite the baseline from an accidentally replaced INI."
+  },
+  "lists": [
+    {
+      "key": "sResourceIndexFileList",
+      "categories": [
+        {
+          "id": "menu-map",
+          "category": "Menu music and map",
+          "archives": [
+            "MIHCMenu - Music.ba2",
+            "SlasherMaskMap.ba2"
+          ]
+        },
+        {
+          "id": "world-upscales",
+          "category": "World texture upscales",
+          "archives": [
+            "D1_2X.ba2",
+            "D2_2X.ba2",
+            "D3_2X.ba2",
+            "D4_2X.ba2",
+            "D5_2X.ba2",
+            "D6_2X.ba2",
+            "D7_2X.ba2",
+            "DA1_2X.ba2",
+            "DA2_2X.ba2",
+            "DA3_2X.ba2",
+            "DA4_2X.ba2",
+            "O1_2X.ba2",
+            "76HDo_n.ba2"
+          ]
+        },
+        {
+          "id": "furniture-displays-stash",
+          "category": "Furniture, displays and stash",
+          "archives": [
+            "FBarSet.ba2",
+            "DocOr_M.ba2",
+            "DocOr_T.ba2",
+            "xxbountystash.ba2"
+          ]
+        },
+        {
+          "id": "environment-cleanup",
+          "category": "Glass, trash and water cleanup",
+          "archives": [
+            "FGB_AiO_M.ba2",
+            "FGB_AiO_T.ba2",
+            "Fake_Glass_Begone_Dpl_M.ba2",
+            "FTB_M.ba2",
+            "FTB_T.ba2",
+            "NO Scum - Main.ba2",
+            "NO Scum - Textures.ba2"
+          ]
+        },
+        {
+          "id": "building-kits",
+          "category": "Building kits and greenhouse glass",
+          "archives": [
+            "Br_Rev_M.ba2",
+            "Br_Rev_T.ba2",
+            "Br_Rev_Wood.ba2",
+            "GH_Rev_M.ba2",
+            "GH_Rev_T.ba2",
+            "OM_Rev_M.ba2",
+            "OM_Rev_T.ba2",
+            "GH_Glass_M.ba2",
+            "GH_Glass_T.ba2"
+          ]
+        },
+        {
+          "id": "animal-appearance",
+          "category": "Animal appearance",
+          "archives": [
+            "BetAnim_M.ba2",
+            "BetAnim_T.ba2"
+          ],
+          "notes": "BetAnim is Better Animals, as identified by local Vortex metadata."
+        },
+        {
+          "id": "glass-beams",
+          "category": "Glass walls and metal beams",
+          "archives": [
+            "Beams.ba2"
+          ],
+          "notes": "Beams is the glass-wall/metal-beam replacer, not a projectile effect."
+        },
+        {
+          "id": "blood-splashes-projectiles",
+          "category": "Blood, splashes and projectiles",
+          "archives": [
+            "EnhancedBlood - Meshes.ba2",
+            "EnhancedBlood - Textures.ba2",
+            "EWSplash_Medium.ba2",
+            "tracer.ba2"
+          ]
+        },
+        {
+          "id": "props-mirrors",
+          "category": "Props and mirrors",
+          "archives": [
+            "PropsAiO_M.ba2",
+            "PropsAiO_T.ba2",
+            "Better Mirrors_M.ba2",
+            "Better Mirrors_T.ba2"
+          ]
+        },
+        {
+          "id": "lighting-floors",
+          "category": "Power armor lighting and floor textures",
+          "archives": [
+            "Diranars_PALight_Up.ba2",
+            "AFR.ba2"
+          ]
+        },
+        {
+          "id": "clothing-power-armor",
+          "category": "Clothing and power armor appearance",
+          "archives": [
+            "2xArmorClothing.ba2",
+            "HDFixedBeret.ba2",
+            "Nuka_M.ba2",
+            "Nuka_T.ba2",
+            "2xPowerArmor.ba2",
+            "PA_Bundle.ba2",
+            "ReconPA_M.ba2",
+            "ReconPA_T.ba2",
+            "BeltPack.ba2",
+            "Vulcan - Nuclear Winter.ba2"
+          ]
+        },
+        {
+          "id": "weapon-upscales",
+          "category": "Weapon texture upscales",
+          "archives": [
+            "2xWeapons.ba2"
+          ]
+        },
+        {
+          "id": "world-workshop-fire-water",
+          "category": "World, workstations, fire and water",
+          "archives": [
+            "Gloomy AIO (All-In-One) 2.2.ba2",
+            "4x Workstations.ba2",
+            "Widening the ground to prevent settlement.ba2",
+            "Fireplaces.ba2",
+            "Fire_Extinguisher_old_M.ba2",
+            "Fire_Extinguisher_old_T.ba2",
+            "WaterSD.ba2"
+          ]
+        },
+        {
+          "id": "loot-bags",
+          "category": "Loot bag appearance",
+          "archives": [
+            "Heartbags-M.ba2",
+            "Heartbags-T.ba2"
+          ]
+        },
+        {
+          "id": "landscape-lighting-flora",
+          "category": "Landscape, lighting and flora",
+          "archives": [
+            "ugly textures gone.ba2",
+            "PoA_Lights.ba2",
+            "SIA_M.ba2",
+            "SIA.ba2",
+            "EF_M.ba2",
+            "EF_T.ba2",
+            "plant_glow.ba2",
+            "FLORANIM_M.ba2",
+            "FLORANIM_T-2K.ba2"
+          ]
+        },
+        {
+          "id": "bodies-outfits-eyes",
+          "category": "Bodies, corpses, outfits and eyes",
+          "archives": [
+            "EVB76FIX_M.ba2",
+            "EVB76FIX_T.ba2",
+            "Lost_EVB_Textures.ba2",
+            "EVB_BAT.ba2",
+            "ACAB76_corpsesM.ba2",
+            "ACAB76_corpsesT.ba2",
+            "CCO76 - Main.ba2",
+            "EyesOfAppalachia.ba2"
+          ]
+        },
+        {
+          "id": "creature-appearance",
+          "category": "Creature appearance",
+          "archives": [
+            "ScorchedHeadExplosion.ba2",
+            "BetterWendigos.ba2",
+            "Scorched Scorchbeasts.ba2",
+            "USBQ-8-Starship_Main.ba2",
+            "USBQ_Textures.ba2",
+            "USBQ_BrighterWings4K.ba2"
+          ]
+        },
+        {
+          "id": "objects-glass-sky",
+          "category": "Object fixes, glass and sky",
+          "archives": [
+            "HDDoormat.ba2",
+            "NukaColaDoorGlassFix.ba2",
+            "ProtectronGlassFix.ba2",
+            "Alien glass fix.ba2",
+            "PrettySkyM.ba2",
+            "PrettySkyT.ba2"
+          ]
+        },
+        {
+          "id": "world-props-creatures",
+          "category": "Aquariums, vehicles, furniture, plants and brahmin",
+          "archives": [
+            "CleanAxoAquarium_M.ba2",
+            "CleanAxoAquarium_T.ba2",
+            "VB02_M.ba2",
+            "VB02_T.ba2",
+            "Quality CubeMaps - HD Cube Maps.ba2",
+            "securitron_vendorbot.ba2",
+            "AoS_PottedPlant_Tex.ba2",
+            "AoS_PottedPlant_Set06.ba2",
+            "EnclaveRug.ba2",
+            "Lseat_T.ba2",
+            "FishTank_M.ba2",
+            "FishTank_T.ba2",
+            "HBrah_M.ba2",
+            "HBrah_T.ba2"
+          ],
+          "notes": "HBrah is Better Brahmin; VB02 is the Enclave Vertibird."
+        },
+        {
+          "id": "perk-board-trees-stimpacks",
+          "category": "Perk board, trees and stimpack appearance",
+          "archives": [
+            "PerkBoardTexRep.BA2",
+            "PerkBoardTexRep2.BA2",
+            "WillowTreeM.ba2",
+            "WillowTreeT.ba2",
+            "SF_SP_M.ba2",
+            "SF_SP_T.ba2"
+          ],
+          "notes": "SF_SP is SF Retro Stimpacks, not a hairstyle."
+        },
+        {
+          "id": "hairstyles",
+          "category": "Hairstyles",
+          "archives": [
+            "fhair_391_M.ba2",
+            "fhair_391_T.ba2",
+            "nmixx_hair_M.ba2",
+            "nmixx_hair_T.ba2",
+            "SF_CPony_M.ba2",
+            "SF_CPony_T.ba2",
+            "SF_scbe_M.ba2",
+            "SF_scbe_T.ba2",
+            "VCHA_M.ba2",
+            "VCHA_T.ba2",
+            "SF_PigTails_M.ba2",
+            "SF_PigTails_T.ba2"
+          ]
+        },
+        {
+          "id": "object-equipment-details",
+          "category": "Lights, equipment and furniture details",
+          "archives": [
+            "LightFixtures - Main.ba2",
+            "LightFixtures - Textures.ba2",
+            "Metal_Barrels.ba2",
+            "ASL_T.ba2",
+            "TV_Fix_M.ba2",
+            "TV_Fix_T.ba2",
+            "Amiga_M.ba2",
+            "Amiga_T.ba2",
+            "RLP.ba2",
+            "PepperShakerBlackRed.ba2",
+            "BetterLodge.ba2",
+            "BetterLodge_T.ba2",
+            "CookingStove - RedLess.ba2",
+            "Kitchenset - Textures.ba2",
+            "BFood_M.ba2",
+            "BFood_T.ba2",
+            "HT01_M.ba2",
+            "HT01_T.ba2"
+          ]
+        },
+        {
+          "id": "pipboy-map-appearance",
+          "category": "Pip-Boy and decorative map appearance",
+          "archives": [
+            "EnclavePipBoy.ba2",
+            "BetterGITDMap.ba2"
+          ]
+        },
+        {
+          "id": "glow-markers-esp",
+          "category": "Glow, collectible markers and ESP",
+          "archives": [
+            "Glow.ba2",
+            "GlowMapFragments.ba2",
+            "BobbleheadStand_M.ba2",
+            "BobbleheadStand_T.ba2",
+            "ore_glow.ba2",
+            "Cr_Mrk_AiO.ba2",
+            "Glowing Scorched.ba2",
+            "ACEE.ba2",
+            "BH_Marker.ba2",
+            "Cs_Marker.ba2",
+            "Mag_Marker.ba2",
+            "PIE - Pitt Items ESP (v1.1.0).ba2",
+            "SB_Mrk.ba2",
+            "ESP_NC_AiO.ba2",
+            "ESP_VendorOutline.ba2",
+            "fuel_ESP.ba2",
+            "ESP_TeddyBears.ba2",
+            "150Abraxo.ba2"
+          ],
+          "notes": "Glowing Scorched.ba2 is explicitly allowed by the user."
+        },
+        {
+          "id": "gameplay-visibility-geometry",
+          "category": "Gameplay, legendary visibility and raid geometry",
+          "archives": [
+            "InstantStimpak.ba2",
+            "ESP_Legendaries.ba2",
+            "NoGuardianBase.ba2"
+          ]
+        },
+        {
+          "id": "voiceline-removal",
+          "category": "Expedition voiceline removal",
+          "archives": [
+            "REVL_2 - The Pitt (UD+AtF) Characters Voiceline Remover.ba2",
+            "REVL_3 - Atlantic City (TE+TMSG) Characters Voiceline Remover.ba2",
+            "REVL_4 - Lennox Voiceline Remover.ba2"
+          ]
+        },
+        {
+          "id": "world-interaction-tail",
+          "category": "Silo and raid geometry, fusion-core charger and saloon doors",
+          "archives": [
+            "NoSiloElevatorHatch.ba2",
+            "Drill_Skip_v2.ba2",
+            "EnclaveFusioncore.ba2",
+            "nosaloondoors.ba2"
+          ],
+          "notes": "Preserve this final IndexFileList block and its current internal order."
+        }
+      ]
+    },
+    {
+      "key": "sResourceArchive2List",
+      "categories": [
+        {
+          "id": "ui-interaction",
+          "category": "HUD editing, building and interaction UI",
+          "archives": [
+            "HUDEditor_IHUD.ba2",
+            "CampBudgetAndBuildingCosts.ba2",
+            "FastTerminals.ba2",
+            "EasyHackingLockpicking.ba2",
+            "QuickBoyX1.0SC.ba2"
+          ],
+          "mustPrecedeHudModLoader": true
+        },
+        {
+          "id": "hud-status-loadouts",
+          "category": "HUD status, players, challenges and perk loadouts",
+          "archives": [
+            "HUDCondition.ba2",
+            "HUDPlayerList.ba2",
+            "HUDChallenges.ba2",
+            "PerkLoadoutManager-HML.ba2"
+          ],
+          "mustPrecedeHudModLoader": true
+        },
+        {
+          "id": "inventory-scopes-loading",
+          "category": "Inventory, Pip-Boy, scopes and loading screens",
+          "archives": [
+            "ImprovedPipboyStats.ba2",
+            "BetterInventory-UO.ba2",
+            "InventOmaticStash-UO.ba2",
+            "ModernScopes.ba2",
+            "loadingScreenOverhaul_smaller_v0.2.ba2"
+          ],
+          "mustPrecedeHudModLoader": true
+        },
+        {
+          "id": "hud-vats-stats-workbench",
+          "category": "VATS, health, XP, loadouts, workbench and damage UI",
+          "archives": [
+            "VATSPriority.ba2",
+            "ImprovedHBS21.ba2",
+            "XpHUD.ba2",
+            "LoadoutWarn.ba2",
+            "sVATS.ba2",
+            "SkipMessagesConfigurable.ba2",
+            "ImprovedWorkbench.ba2",
+            "SimpleDPS.ba2"
+          ],
+          "mustPrecedeHudModLoader": true
+        },
+        {
+          "id": "ui-targeting-perks-seasons",
+          "category": "Dialogue, UI speed, targeting, perks and seasons",
+          "archives": [
+            "autodialogue.ba2",
+            "FastUI.ba2",
+            "TargetPulse.ba2",
+            "CC.ba2",
+            "FastPipV2.ba2",
+            "KillStreakTimer.ba2",
+            "BetterSeasons.ba2"
+          ],
+          "mustPrecedeHudModLoader": true,
+          "notes": "CC.ba2 is VaultgirlLegendaryPerks and contains interface/legendaryperkslibrary.swf."
+        },
+        {
+          "id": "hud-loader",
+          "category": "HUD Mod Loader",
+          "archives": [
+            "HUDModLoader.ba2"
+          ],
+          "notes": "All five preceding UI/HUD groups must remain before this loader. It is not the last archive in the whole list."
+        },
+        {
+          "id": "audio-overhaul",
+          "category": "Audio overhaul",
+          "archives": [
+            "76UltimateAudioOverhaul - v3.ba2"
+          ]
+        },
+        {
+          "id": "weapon-draw",
+          "category": "Weapon draw animation",
+          "archives": [
+            "QuickDraw76.ba2"
+          ],
+          "notes": "QuickDraw76 contains a first-person gunbehavior.hkx. Preserve its current position between the audio overhaul and the following audio/effects group."
+        },
+        {
+          "id": "audio-effects",
+          "category": "Weapon, explosion and emote audio and effects",
+          "archives": [
+            "AppalachiaWarfare - Weapons.ba2",
+            "AppalachiaWarfare - Bullets.ba2",
+            "AppalachiaWarfare - Explosions.ba2",
+            "IRGSO.ba2",
+            "GaussWeaponFullChargeSound.BA2",
+            "Emote sound replacer1.3.ba2",
+            "MOD_BetterExplosions.ba2"
+          ]
+        },
+        {
+          "id": "player-animations",
+          "category": "Player and power armor animations",
+          "archives": [
+            "MoreAnimations.ba2",
+            "AnimNew.ba2",
+            "PA_FastANIM.ba2",
+            "lowered_addon.ba2",
+            "HolsteredSprintHands.BA2"
+          ]
+        },
+        {
+          "id": "sights-pa-assets",
+          "category": "Weapon sight and power armor dashboard assets",
+          "archives": [
+            "Minigun_ReflexNull.ba2",
+            "HoloHUD_4PA.ba2"
+          ],
+          "notes": "HoloHUD_4PA.ba2 was inspected: it contains dashboard/rain-effect meshes and textures, with no SWF files. Preserve this asset-only add-on after HUDModLoader; do not classify it as an HML widget merely from its name."
+        },
+        {
+          "id": "weapon-pa-timing",
+          "category": "Weapon timing and power armor entry tweaks",
+          "archives": [
+            "NoSpinup5.ba2",
+            "InstantReloads5.ba2",
+            "InstantPowerArmor.ba2",
+            "DragonFFR.ba2",
+            "FFR200MELEE300.ba2",
+            "GatlingGunFireRate.ba2"
+          ]
+        },
+        {
+          "id": "skeleton-underarmor",
+          "category": "Skeleton and underarmor",
+          "archives": [
+            "PPHmix_KF1.ba2",
+            "EVB_UA.ba2",
+            "EVB_UAM.ba2"
+          ],
+          "notes": "PPHmix_KF1 contains first- and third-person skeleton meshes (Knee Fix and Pip-Boy Headlight)."
+        },
+        {
+          "id": "visibility-color-grading",
+          "category": "Wood pile visibility and color grading",
+          "archives": [
+            "InvisiWoodPiles.ba2",
+            "CO76LUT.ba2",
+            "More-Vibrancy.ba2",
+            "nucleus.ba2"
+          ],
+          "notes": "nucleus.ba2 was inspected and contains color-grading LUT textures."
+        },
+        {
+          "id": "spa-hairstyles",
+          "category": "Spa furniture and hairstyles",
+          "archives": [
+            "VTspa_M.ba2",
+            "VTspa_T.ba2",
+            "CNV_PT_M.ba2",
+            "CNV_PT_T.ba2",
+            "SF_DSUNI_M.ba2",
+            "SF_DSUNI_T.ba2"
+          ]
+        },
+        {
+          "id": "marker-effect-removal",
+          "category": "Marker effect removal",
+          "archives": [
+            "BM_Invisible.ba2"
+          ],
+          "notes": "BM_Invisible contains a detect-life shader-particle mesh."
+        },
+        {
+          "id": "door-override",
+          "category": "Door-removal override",
+          "archives": [
+            "DoorsBGoneV14.ba2"
+          ],
+          "notes": "DoorsBGoneV14.ba2 remains the final entry."
+        }
+      ]
+    }
+  ]
+}
