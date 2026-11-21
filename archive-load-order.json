@@ -398,6 +398,7 @@
           "category": "HUD editing, building and interaction UI",
           "archives": [
             "HUDEditor_IHUD.ba2",
+            "VaultBoyPopupCompat.ba2",
             "CampBudgetAndBuildingCosts.ba2",
             "CampVisitorsFix.ba2",
             "FastTerminals.ba2",
