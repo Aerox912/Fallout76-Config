@@ -4,19 +4,19 @@
 "enabled" = false
 
 [mcp_servers.gateway-codebase-memory-mcp]
-"url" = "http://127.0.0.1:19343/mcp/6d6a2d0c3975b32292126ad753d88d04"
+"url" = "http://127.0.0.1:19345/mcp/6d6a2d0c3975b32292126ad753d88d04"
 "enabled" = true
 
 [mcp_servers.cross-agent-delegator]
 "enabled" = false
 
 [mcp_servers.gateway-cross-agent-delegator]
-"url" = "http://127.0.0.1:19343/mcp/d3d8567b8d9b24bd68117def30b9ce6d"
+"url" = "http://127.0.0.1:19345/mcp/d3d8567b8d9b24bd68117def30b9ce6d"
 "enabled" = true
 
 [mcp_servers.ai-memory]
 "enabled" = false
 
 [mcp_servers.gateway-ai-memory]
-"url" = "http://127.0.0.1:19343/mcp/f88565304a815953f640ea69b62ab3d7"
+"url" = "http://127.0.0.1:19345/mcp/f88565304a815953f640ea69b62ab3d7"
 "enabled" = true
